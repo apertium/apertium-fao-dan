@@ -1,0 +1,5 @@
+* text=auto !eol
+/README -text
+dev/swadesh_list.txt -text
+dev/wiki.n.xml -text
+dev/wiki.np-top.xml -text

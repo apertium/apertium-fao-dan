@@ -1,0 +1,166 @@
+3 ; han ; hann 
+4 ; vi ; vit 
+6 ; de ; teir / tær / tey 
+7 ; det her, den her, dette ; hesin / henda / hetta 
+8 ; den der, det der ; hasin / handa / hatta 
+9 ; her ; her 
+10 ; der ; har 
+11 ; hvem ; hvør 
+12 ; hvad ; hvat 
+13 ; hvor ; hvar 
+14 ; hvornår ; nær 
+15 ; hvordan, hvorledes ; hvussu 
+16 ; ikke ; ikki 
+17 ; alt, alle, al ; alt 
+18 ; mange ; nógvir, mangir 
+19 ; nogen ; nakrir 
+20 ; få ; fáir 
+21 ; anden ; annar 
+22 ; en ; ein 
+23 ; to ; tveir 
+24 ; tre ; tríggir 
+25 ; fire ; fýra 
+26 ; fem ; fimm 
+27 ; stor ; stórur 
+28 ; lang ; langur 
+29 ; bred ; breiður 
+30 ; tyk ; tjúkkur 
+31 ; tung ; tungur 
+32 ; lille ; lítil 
+33 ; kort ; stuttur 
+34 ; snæver ; trongur 
+35 ; tynd ; klænur, tunnur 
+36 ; kvinde ; kona, kvinna 
+40 ; hustru, kone ; kona 
+41 ; ægtemand, mand ; maður 
+42 ; moder ; móðir, mamma 
+43 ; fader ; faðir, pápi, babba 
+44 ; dyr ; djór, dýr 
+45 ; fisk ; fiskur 
+46 ; fugl ; fuglur 
+47 ; hund ; hundur 
+48 ; lus ; lús 
+49 ; slange ; slanga, ormur 
+50 ; orm ; ormur, maðkur 
+51 ; træ ; træ 
+52 ; skov ; skógur, skóg 
+54 ; frugt ; frukt, ávøkstur 
+55 ; frø ; fræ 
+56 ; blad ; blað 
+57 ; rod ; rót 
+59 ; blomst ; blóma 
+60 ; græs ; græs 
+61 ; reb ; reip 
+64 ; blod ; blóð 
+65 ; ben, knogle ; bein 
+67 ; æg ; egg 
+68 ; horn ; horn 
+69 ; hale ; hali 
+71 ; hår ; hár 
+72 ; hoved ; høvd, høvur 
+73 ; øre ; oyra 
+74 ; øje ; eyga 
+75 ; næse ; nøs 
+76 ; mund ; munnur, muður 
+78 ; tunge ; tunga 
+79 ; negl ; negl 
+80 ; fod ; fótur 
+81 ; ben ; bein, leggur 
+82 ; knæ ; knæ 
+83 ; hånd ; hond 
+84 ; vinge ; vongur 
+85 ; mave ; magi, búkur 
+86 ; tarm ; tarmur, gørn 
+87 ; hals ; hálsur 
+88 ; ryg ; ryggur 
+89 ; bryst ; bróst 
+90 ; hjerte ; hjarta 
+91 ; lever ; livur 
+92 ; drikke ; drekka 
+93 ; spise ; eta 
+94 ; bide ; bíta 
+95 ; sutte, suge ; súgva 
+96 ; spytte ; spýta 
+97 ; kaste op ; spýggja 
+99 ; ånde ; anda 
+100 ; le, grine ; læa, grína, flenna 
+101 ; se ; síggja 
+102 ; høre ; hoyra 
+104 ; tænke ; hugsa 
+106 ; frygte ; ræðast 
+107 ; sove ; sova 
+108 ; leve ; liva 
+109 ; dø ; doyggja 
+110 ; dræbe ; drepa 
+111 ; kæmpe ; stríða 
+113 ; slå ; sláa 
+114 ; skære ; skera 
+115 ; splitte ; klúgva 
+118 ; grave ; grava 
+119 ; svømme ; svimja 
+120 ; flyve ; flúgva 
+121 ; gå ; ganga 
+122 ; komme ; koma 
+128 ; give ; geva 
+130 ; presse ; kroysta 
+131 ; gnide ; gníggja 
+132 ; vaske ; vaska, tváa 
+133 ; viske ; turka 
+134 ; trække ; toga 
+135 ; skubbe ; skumpa 
+136 ; kaste ; kasta, blaka, tveita 
+137 ; binde ; binda 
+138 ; sy ; seyma 
+139 ; tælle ; telja 
+140 ; sige ; siga 
+141 ; synge ; syngja 
+142 ; spille ; spæla, leika 
+144 ; strømme ; streyma, floyma 
+145 ; fryse ; frysta 
+146 ; svulme ; bólgna, hovna, trútna 
+147 ; sol ; sól 
+148 ; måne ; máni 
+149 ; stjerne ; stjørna 
+150 ; vand ; vatn 
+151 ; regne ; regna 
+152 ; flod ; á 
+153 ; sø ; vatn 
+155 ; salt ; salt 
+156 ; sten ; steinur 
+157 ; sand ; sandur 
+158 ; støv ; dust, støv 
+160 ; sky ; skýggj 
+161 ; tåge ; mjørki, toka 
+162 ; himmel ; himmal, himin 
+164 ; sne ; kavi, snjógvur 
+165 ; is ; ísur 
+166 ; røg ; roykur 
+167 ; ild ; eldur 
+168 ; aske ; øska 
+170 ; vej ; vegur 
+171 ; bjerg ; fjall 
+172 ; rød ; reyður 
+173 ; grøn ; grønur 
+174 ; gul ; gulur 
+175 ; hvid ; hvítur 
+176 ; sort ; svartur 
+177 ; nat ; nátt 
+179 ; år ; ár 
+182 ; fuld ; fullur 
+183 ; ny ; nýggjur 
+184 ; gammel ; gamal 
+185 ; god ; góður 
+186 ; dårlig ; óndur 
+188 ; snavset, beskidt ; skitin 
+189 ; lige ; beinur 
+190 ; rund ; rundur 
+193 ; glat ; slættur 
+194 ; våd ; vátur 
+197 ; nær ; nær 
+198 ; fjern ; fjarur 
+201 ; ved ; hjá 
+202 ; i ; í 
+204 ; og ; og 
+205 ; hvis ; um 
+206 ; fordi ; tí 
+207 ; navn ; navn 
