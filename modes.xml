@@ -39,9 +39,6 @@
         <file name="fao-dan.autogen.bin"/>
       </program>
 
-      <program name="lt-proc -p">
-        <file name="fao-dan.autopgen.bin"/>
-      </program>
     </pipeline>
   </mode>
 
@@ -307,9 +304,6 @@
         <file name="dan-fao.autogen.bin"/>
       </program>
 
-      <program name="lt-proc -p">
-        <file name="dan-fao.autopgen.bin"/>
-      </program>
     </pipeline>
   </mode>
 
