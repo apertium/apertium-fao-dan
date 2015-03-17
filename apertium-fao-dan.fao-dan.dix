@@ -18,172 +18,172 @@
 
      <!-- SECTION: Nouns -->
 
-     <e><p><l>abstraktur<s n="n"/><s n="m"/></l><r>abstraktion<s n="n"/><s n="m"/></r></p></e>
-     <e><p><l>alfrøði<s n="n"/><s n="m"/></l><r>encyklopædi<s n="n"/><s n="m"/></r></p></e>
-     <e><p><l>alisfrøði<s n="n"/><s n="m"/></l><r>fysik<s n="n"/><s n="m"/></r></p></e>
-     <e><p><l>aminosýra<s n="n"/><s n="m"/></l><r>aminosyre<s n="n"/><s n="m"/></r></p></e>
-     <e><p><l>anarkisma<s n="n"/><s n="m"/></l><r>anarkisme<s n="n"/><s n="m"/></r></p></e>
-     <e><p><l>apríl<s n="n"/><s n="m"/></l><r>april<s n="n"/><s n="m"/></r></p></e>
+     <e><p><l>abstraktur<s n="n"/><s n="m"/></l><r>abstraktion<s n="n"/><s n="ut"/></r></p></e>
+     <e><p><l>alfrøði<s n="n"/><s n="m"/></l><r>encyklopædi<s n="n"/><s n="ut"/></r></p></e>
+     <e><p><l>alisfrøði<s n="n"/><s n="m"/></l><r>fysik<s n="n"/><s n="ut"/></r></p></e>
+     <e><p><l>aminosýra<s n="n"/><s n="m"/></l><r>aminosyre<s n="n"/><s n="ut"/></r></p></e>
+     <e><p><l>anarkisma<s n="n"/><s n="m"/></l><r>anarkisme<s n="n"/><s n="ut"/></r></p></e>
+     <e><p><l>apríl<s n="n"/><s n="m"/></l><r>april<s n="n"/><s n="ut"/></r></p></e>
      <e><p><l>arabiskt<s n="n"/><s n="nt"/></l><r>arabisk<s n="n"/><s n="nt"/></r></p></e>
      <e><p><l>atom<s n="n"/><s n="nt"/></l><r>atom<s n="n"/><s n="nt"/></r></p></e>
-     <e><p><l>august<s n="n"/><s n="m"/></l><r>august<s n="n"/><s n="m"/></r></p></e>
-     <e><p><l>bakteria<s n="n"/><s n="m"/></l><r>bakterie<s n="n"/><s n="m"/></r></p></e>
-     <e><p><l>blog<s n="n"/><s n="m"/></l><r>blog<s n="n"/><s n="m"/></r></p></e>
-     <e><p><l>borgarakríggj<s n="n"/><s n="m"/></l><r>borgerkrig<s n="n"/><s n="m"/></r></p></e>
+     <e><p><l>august<s n="n"/><s n="m"/></l><r>august<s n="n"/><s n="ut"/></r></p></e>
+     <e><p><l>bakteria<s n="n"/><s n="m"/></l><r>bakterie<s n="n"/><s n="ut"/></r></p></e>
+     <e><p><l>blog<s n="n"/><s n="m"/></l><r>blog<s n="n"/><s n="ut"/></r></p></e>
+     <e><p><l>borgarakríggj<s n="n"/><s n="m"/></l><r>borgerkrig<s n="n"/><s n="ut"/></r></p></e>
      <e><p><l>borðspæl<s n="n"/><s n="nt"/></l><r>brætspil<s n="n"/><s n="nt"/></r></p></e>
-     <e><p><l>bíblian<s n="n"/><s n="m"/></l><r>bibel<s n="n"/><s n="m"/></r></p></e>
-     <e><p><l>bókmentir<s n="n"/><s n="m"/></l><r>litteratur<s n="n"/><s n="m"/></r></p></e>
+     <e><p><l>bíblian<s n="n"/><s n="m"/></l><r>bibel<s n="n"/><s n="ut"/></r></p></e>
+     <e><p><l>bókmentir<s n="n"/><s n="m"/></l><r>litteratur<s n="n"/><s n="ut"/></r></p></e>
      <e><p><l>bókstavur<s n="n"/><s n="nt"/></l><r>bogstav<s n="n"/><s n="nt"/></r></p></e>
-     <e><p><l>búskapur<s n="n"/><s n="m"/></l><r>økonomi<s n="n"/><s n="m"/></r></p></e>
-     <e><p><l>býarvøksur<s n="n"/><s n="m"/></l><r>urbanisering<s n="n"/><s n="m"/></r></p></e>
-     <e><p><l>desember<s n="n"/><s n="m"/></l><r>december<s n="n"/><s n="m"/></r></p></e>
-     <e><p><l>deyðarevsing<s n="n"/><s n="m"/></l><r>dødsdom<s n="n"/><s n="m"/></r></p></e>
-     <e><p><l>diamantar<s n="n"/><s n="m"/></l><r>diamant<s n="n"/><s n="m"/></r></p></e>
-     <e><p><l>dustsúgvari<s n="n"/><s n="m"/></l><r>støvsuger<s n="n"/><s n="m"/></r></p></e>
-     <e><p><l>dálking<s n="n"/><s n="m"/></l><r>forurening<s n="n"/><s n="m"/></r></p></e>
-     <e><p><l>dópur<s n="n"/><s n="m"/></l><r>dåb<s n="n"/><s n="m"/></r></p></e>
+     <e><p><l>búskapur<s n="n"/><s n="m"/></l><r>økonomi<s n="n"/><s n="ut"/></r></p></e>
+     <e><p><l>býarvøksur<s n="n"/><s n="m"/></l><r>urbanisering<s n="n"/><s n="ut"/></r></p></e>
+     <e><p><l>desember<s n="n"/><s n="m"/></l><r>december<s n="n"/><s n="ut"/></r></p></e>
+     <e><p><l>deyðarevsing<s n="n"/><s n="m"/></l><r>dødsdom<s n="n"/><s n="ut"/></r></p></e>
+     <e><p><l>diamantar<s n="n"/><s n="m"/></l><r>diamant<s n="n"/><s n="ut"/></r></p></e>
+     <e><p><l>dustsúgvari<s n="n"/><s n="m"/></l><r>støvsuger<s n="n"/><s n="ut"/></r></p></e>
+     <e><p><l>dálking<s n="n"/><s n="m"/></l><r>forurening<s n="n"/><s n="ut"/></r></p></e>
+     <e><p><l>dópur<s n="n"/><s n="m"/></l><r>dåb<s n="n"/><s n="ut"/></r></p></e>
      <e><p><l>dýr<s n="n"/><s n="nt"/></l><r>dyr<s n="n"/><s n="nt"/></r></p></e>
      <e><p><l>egyptaland<s n="n"/><s n="nt"/></l><r>egyptisk<s n="n"/><s n="nt"/></r></p></e>
-     <e><p><l>eiturkoppur<s n="n"/><s n="m"/></l><r>edderkop<s n="n"/><s n="m"/></r></p></e>
-     <e><p><l>elgur<s n="n"/><s n="m"/></l><r>elg<s n="n"/><s n="m"/></r></p></e>
-     <e><p><l>euro<s n="n"/><s n="m"/></l><r>euro<s n="n"/><s n="m"/></r></p></e>
-     <e><p><l>evnafrøði<s n="n"/><s n="m"/></l><r>kemi<s n="n"/><s n="m"/></r></p></e>
-     <e><p><l>evropa<s n="n"/><s n="m"/></l><r>europæer<s n="n"/><s n="m"/></r></p></e>
-     <e><p><l>fartelefon<s n="n"/><s n="m"/></l><r>mobiltelefon<s n="n"/><s n="m"/></r></p></e>
-     <e><p><l>februar<s n="n"/><s n="m"/></l><r>februar<s n="n"/><s n="m"/></r></p></e>
-     <e><p><l>filmur<s n="n"/><s n="m"/></l><r>film<s n="n"/><s n="m"/></r></p></e>
-     <e><p><l>fiskur<s n="n"/><s n="m"/></l><r>fisk<s n="n"/><s n="m"/></r></p></e>
-     <e><p><l>flogbóltur<s n="n"/><s n="m"/></l><r>volleyball<s n="n"/><s n="m"/></r></p></e>
+     <e><p><l>eiturkoppur<s n="n"/><s n="m"/></l><r>edderkop<s n="n"/><s n="ut"/></r></p></e>
+     <e><p><l>elgur<s n="n"/><s n="m"/></l><r>elg<s n="n"/><s n="ut"/></r></p></e>
+     <e><p><l>euro<s n="n"/><s n="m"/></l><r>euro<s n="n"/><s n="ut"/></r></p></e>
+     <e><p><l>evnafrøði<s n="n"/><s n="m"/></l><r>kemi<s n="n"/><s n="ut"/></r></p></e>
+     <e><p><l>evropa<s n="n"/><s n="m"/></l><r>europæer<s n="n"/><s n="ut"/></r></p></e>
+     <e><p><l>fartelefon<s n="n"/><s n="m"/></l><r>mobiltelefon<s n="n"/><s n="ut"/></r></p></e>
+     <e><p><l>februar<s n="n"/><s n="m"/></l><r>februar<s n="n"/><s n="ut"/></r></p></e>
+     <e><p><l>filmur<s n="n"/><s n="m"/></l><r>film<s n="n"/><s n="ut"/></r></p></e>
+     <e><p><l>fiskur<s n="n"/><s n="m"/></l><r>fisk<s n="n"/><s n="ut"/></r></p></e>
+     <e><p><l>flogbóltur<s n="n"/><s n="m"/></l><r>volleyball<s n="n"/><s n="ut"/></r></p></e>
      <e><p><l>fongsul<s n="n"/><s n="nt"/></l><r>fængsel<s n="n"/><s n="nt"/></r></p></e>
      <e><p><l>fongsul<s n="n"/><s n="nt"/></l><r>tugthus<s n="n"/><s n="nt"/></r></p></e>
-     <e><p><l>fosturtøka<s n="n"/><s n="m"/></l><r>abort<s n="n"/><s n="m"/></r></p></e>
-     <e><p><l>fríggjadagur<s n="n"/><s n="m"/></l><r>fredag<s n="n"/><s n="m"/></r></p></e>
-     <e><p><l>fuglur<s n="n"/><s n="m"/></l><r>fugl<s n="n"/><s n="m"/></r></p></e>
+     <e><p><l>fosturtøka<s n="n"/><s n="m"/></l><r>abort<s n="n"/><s n="ut"/></r></p></e>
+     <e><p><l>fríggjadagur<s n="n"/><s n="m"/></l><r>fredag<s n="n"/><s n="ut"/></r></p></e>
+     <e><p><l>fuglur<s n="n"/><s n="m"/></l><r>fugl<s n="n"/><s n="ut"/></r></p></e>
      <e><p><l>fólkaræði<s n="n"/><s n="nt"/></l><r>demokrati<s n="n"/><s n="nt"/></r></p></e>
-     <e><p><l>fótbóltur<s n="n"/><s n="m"/></l><r>fodbold<s n="n"/><s n="m"/></r></p></e>
-     <e><p><l>føll<s n="n"/><s n="m"/></l><r>kasus<s n="n"/><s n="m"/></r></p></e>
-     <e><p><l>gjaldoyra<s n="n"/><s n="m"/></l><r>møntenhed<s n="n"/><s n="m"/></r></p></e>
-     <e><p><l>gjaldoyra<s n="n"/><s n="m"/></l><r>valuta<s n="n"/><s n="m"/></r></p></e>
-     <e><p><l>golf<s n="n"/><s n="m"/></l><r>golf<s n="n"/><s n="m"/></r></p></e>
-     <e><p><l>golf<s n="n"/><s n="m"/></l><r>golfklub<s n="n"/><s n="m"/></r></p></e>
-     <e><p><l>grevlingur<s n="n"/><s n="m"/></l><r>grævling<s n="n"/><s n="m"/></r></p></e>
-     <e><p><l>grikkaland<s n="n"/><s n="m"/></l><r>græker<s n="n"/><s n="m"/></r></p></e>
-     <e><p><l>hagfrøði<s n="n"/><s n="m"/></l><r>statistik<s n="n"/><s n="m"/></r></p></e>
-     <e><p><l>halgidagur<s n="n"/><s n="m"/></l><r>helligdag<s n="n"/><s n="m"/></r></p></e>
+     <e><p><l>fótbóltur<s n="n"/><s n="m"/></l><r>fodbold<s n="n"/><s n="ut"/></r></p></e>
+     <e><p><l>føll<s n="n"/><s n="m"/></l><r>kasus<s n="n"/><s n="ut"/></r></p></e>
+     <e><p><l>gjaldoyra<s n="n"/><s n="m"/></l><r>møntenhed<s n="n"/><s n="ut"/></r></p></e>
+     <e><p><l>gjaldoyra<s n="n"/><s n="m"/></l><r>valuta<s n="n"/><s n="ut"/></r></p></e>
+     <e><p><l>golf<s n="n"/><s n="m"/></l><r>golf<s n="n"/><s n="ut"/></r></p></e>
+     <e><p><l>golf<s n="n"/><s n="m"/></l><r>golfklub<s n="n"/><s n="ut"/></r></p></e>
+     <e><p><l>grevlingur<s n="n"/><s n="m"/></l><r>grævling<s n="n"/><s n="ut"/></r></p></e>
+     <e><p><l>grikkaland<s n="n"/><s n="m"/></l><r>græker<s n="n"/><s n="ut"/></r></p></e>
+     <e><p><l>hagfrøði<s n="n"/><s n="m"/></l><r>statistik<s n="n"/><s n="ut"/></r></p></e>
+     <e><p><l>halgidagur<s n="n"/><s n="m"/></l><r>helligdag<s n="n"/><s n="ut"/></r></p></e>
      <e><p><l>heiltal<s n="n"/><s n="nt"/></l><r>heltal<s n="n"/><s n="nt"/></r></p></e>
-     <e><p><l>heimspeki<s n="n"/><s n="m"/></l><r>filosofi<s n="n"/><s n="m"/></r></p></e>
+     <e><p><l>heimspeki<s n="n"/><s n="m"/></l><r>filosofi<s n="n"/><s n="ut"/></r></p></e>
      <e><p><l>helium<s n="n"/><s n="nt"/></l><r>helium<s n="n"/><s n="nt"/></r></p></e>
-     <e><p><l>hundur<s n="n"/><s n="m"/></l><r>hund<s n="n"/><s n="m"/></r></p></e>
-     <e><p><l>hvalur<s n="n"/><s n="m"/></l><r>hval<s n="n"/><s n="m"/></r></p></e>
-     <e><p><l>hydrogen<s n="n"/><s n="m"/></l><r>brint<s n="n"/><s n="m"/></r></p></e>
-     <e><p><l>hávur<s n="n"/><s n="m"/></l><r>haj<s n="n"/><s n="m"/></r></p></e>
+     <e><p><l>hundur<s n="n"/><s n="m"/></l><r>hund<s n="n"/><s n="ut"/></r></p></e>
+     <e><p><l>hvalur<s n="n"/><s n="m"/></l><r>hval<s n="n"/><s n="ut"/></r></p></e>
+     <e><p><l>hydrogen<s n="n"/><s n="m"/></l><r>brint<s n="n"/><s n="ut"/></r></p></e>
+     <e><p><l>hávur<s n="n"/><s n="m"/></l><r>haj<s n="n"/><s n="ut"/></r></p></e>
      <e><p><l>hávur<s n="n"/><s n="nt"/></l><r>haj<s n="n"/><s n="nt"/></r></p></e>
-     <e><p><l>hósdagur<s n="n"/><s n="m"/></l><r>torsdag<s n="n"/><s n="m"/></r></p></e>
-     <e><p><l>høvuðsstaður<s n="n"/><s n="m"/></l><r>hovedstad<s n="n"/><s n="m"/></r></p></e>
-     <e><p><l>ion<s n="n"/><s n="m"/></l><r>ion<s n="n"/><s n="m"/></r></p></e>
-     <e><p><l>islam<s n="n"/><s n="m"/></l><r>muslim<s n="n"/><s n="m"/></r></p></e>
-     <e><p><l>januar<s n="n"/><s n="m"/></l><r>januar<s n="n"/><s n="m"/></r></p></e>
-     <e><p><l>jarðfrøði<s n="n"/><s n="m"/></l><r>geologi<s n="n"/><s n="m"/></r></p></e>
+     <e><p><l>hósdagur<s n="n"/><s n="m"/></l><r>torsdag<s n="n"/><s n="ut"/></r></p></e>
+     <e><p><l>høvuðsstaður<s n="n"/><s n="m"/></l><r>hovedstad<s n="n"/><s n="ut"/></r></p></e>
+     <e><p><l>ion<s n="n"/><s n="m"/></l><r>ion<s n="n"/><s n="ut"/></r></p></e>
+     <e><p><l>islam<s n="n"/><s n="m"/></l><r>muslim<s n="n"/><s n="ut"/></r></p></e>
+     <e><p><l>januar<s n="n"/><s n="m"/></l><r>januar<s n="n"/><s n="ut"/></r></p></e>
+     <e><p><l>jarðfrøði<s n="n"/><s n="m"/></l><r>geologi<s n="n"/><s n="ut"/></r></p></e>
      <e><p><l>jarðskjálvti<s n="n"/><s n="nt"/></l><r>jordskælv<s n="n"/><s n="nt"/></r></p></e>
-     <e><p><l>juli<s n="n"/><s n="m"/></l><r>juli<s n="n"/><s n="m"/></r></p></e>
-     <e><p><l>juni<s n="n"/><s n="m"/></l><r>juni<s n="n"/><s n="m"/></r></p></e>
-     <e><p><l>jól<s n="n"/><s n="m"/></l><r>jul<s n="n"/><s n="m"/></r></p></e>
-     <e><p><l>kappróður<s n="n"/><s n="m"/></l><r>roning<s n="n"/><s n="m"/></r></p></e>
+     <e><p><l>juli<s n="n"/><s n="m"/></l><r>juli<s n="n"/><s n="ut"/></r></p></e>
+     <e><p><l>juni<s n="n"/><s n="m"/></l><r>juni<s n="n"/><s n="ut"/></r></p></e>
+     <e><p><l>jól<s n="n"/><s n="m"/></l><r>jul<s n="n"/><s n="ut"/></r></p></e>
+     <e><p><l>kappróður<s n="n"/><s n="m"/></l><r>roning<s n="n"/><s n="ut"/></r></p></e>
      <e><p><l>kekkiskt<s n="n"/><s n="nt"/></l><r>tjekkisk<s n="n"/><s n="nt"/></r></p></e>
-     <e><p><l>kina<s n="n"/><s n="m"/></l><r>kineser<s n="n"/><s n="m"/></r></p></e>
-     <e><p><l>kommunisma<s n="n"/><s n="m"/></l><r>kommunist<s n="n"/><s n="m"/></r></p></e>
+     <e><p><l>kina<s n="n"/><s n="m"/></l><r>kineser<s n="n"/><s n="ut"/></r></p></e>
+     <e><p><l>kommunisma<s n="n"/><s n="m"/></l><r>kommunist<s n="n"/><s n="ut"/></r></p></e>
      <e><p><l>kongsveldi<s n="n"/><s n="nt"/></l><r>monarki<s n="n"/><s n="nt"/></r></p></e>
-     <e><p><l>kristindómur<s n="n"/><s n="m"/></l><r>kristendom<s n="n"/><s n="m"/></r></p></e>
-     <e><p><l>kurvabóltur<s n="n"/><s n="m"/></l><r>basketball<s n="n"/><s n="m"/></r></p></e>
+     <e><p><l>kristindómur<s n="n"/><s n="m"/></l><r>kristendom<s n="n"/><s n="ut"/></r></p></e>
+     <e><p><l>kurvabóltur<s n="n"/><s n="m"/></l><r>basketball<s n="n"/><s n="ut"/></r></p></e>
      <e><p><l>kveiki<s n="n"/><s n="nt"/></l><r>enzym<s n="n"/><s n="nt"/></r></p></e>
-     <e><p><l>landafrøði<s n="n"/><s n="m"/></l><r>geografi<s n="n"/><s n="m"/></r></p></e>
+     <e><p><l>landafrøði<s n="n"/><s n="m"/></l><r>geografi<s n="n"/><s n="ut"/></r></p></e>
      <e><p><l>landafrøði<s n="n"/><s n="nt"/></l><r>geografi<s n="n"/><s n="nt"/></r></p></e>
-     <e><p><l>leygardagur<s n="n"/><s n="m"/></l><r>lørdag<s n="n"/><s n="m"/></r></p></e>
-     <e><p><l>leyva<s n="n"/><s n="m"/></l><r>løve<s n="n"/><s n="m"/></r></p></e>
+     <e><p><l>leygardagur<s n="n"/><s n="m"/></l><r>lørdag<s n="n"/><s n="ut"/></r></p></e>
+     <e><p><l>leyva<s n="n"/><s n="m"/></l><r>løve<s n="n"/><s n="ut"/></r></p></e>
      <e><p><l>lithium<s n="n"/><s n="nt"/></l><r>litium<s n="n"/><s n="nt"/></r></p></e>
      <e><p><l>liðadýr<s n="n"/><s n="nt"/></l><r>leddyr<s n="n"/><s n="nt"/></r></p></e>
-     <e><p><l>ljóðfrøði<s n="n"/><s n="m"/></l><r>fonetik<s n="n"/><s n="m"/></r></p></e>
-     <e><p><l>lívevnafrøði<s n="n"/><s n="m"/></l><r>biokemi<s n="n"/><s n="m"/></r></p></e>
-     <e><p><l>lívfrøði<s n="n"/><s n="m"/></l><r>biologi<s n="n"/><s n="m"/></r></p></e>
-     <e><p><l>mai<s n="n"/><s n="m"/></l><r>maj<s n="n"/><s n="m"/></r></p></e>
-     <e><p><l>mars<s n="n"/><s n="m"/></l><r>marts<s n="n"/><s n="m"/></r></p></e>
-     <e><p><l>matur<s n="n"/><s n="m"/></l><r>fødevare<s n="n"/><s n="m"/></r></p></e>
-     <e><p><l>matur<s n="n"/><s n="m"/></l><r>mad<s n="n"/><s n="m"/></r></p></e>
-     <e><p><l>mikudagur<s n="n"/><s n="m"/></l><r>onsdag<s n="n"/><s n="m"/></r></p></e>
+     <e><p><l>ljóðfrøði<s n="n"/><s n="m"/></l><r>fonetik<s n="n"/><s n="ut"/></r></p></e>
+     <e><p><l>lívevnafrøði<s n="n"/><s n="m"/></l><r>biokemi<s n="n"/><s n="ut"/></r></p></e>
+     <e><p><l>lívfrøði<s n="n"/><s n="m"/></l><r>biologi<s n="n"/><s n="ut"/></r></p></e>
+     <e><p><l>mai<s n="n"/><s n="m"/></l><r>maj<s n="n"/><s n="ut"/></r></p></e>
+     <e><p><l>mars<s n="n"/><s n="m"/></l><r>marts<s n="n"/><s n="ut"/></r></p></e>
+     <e><p><l>matur<s n="n"/><s n="m"/></l><r>fødevare<s n="n"/><s n="ut"/></r></p></e>
+     <e><p><l>matur<s n="n"/><s n="m"/></l><r>mad<s n="n"/><s n="ut"/></r></p></e>
+     <e><p><l>mikudagur<s n="n"/><s n="m"/></l><r>onsdag<s n="n"/><s n="ut"/></r></p></e>
      <e><p><l>mál<s n="n"/><s n="nt"/></l><r>sprog<s n="n"/><s n="nt"/></r></p></e>
-     <e><p><l>málfrøði<s n="n"/><s n="m"/></l><r>lingvistik<s n="n"/><s n="m"/></r></p></e>
-     <e><p><l>málfrøði<s n="n"/><s n="m"/></l><r>sprogvidenskab<s n="n"/><s n="m"/></r></p></e>
-     <e><p><l>mánadagur<s n="n"/><s n="m"/></l><r>mandag<s n="n"/><s n="m"/></r></p></e>
+     <e><p><l>málfrøði<s n="n"/><s n="m"/></l><r>lingvistik<s n="n"/><s n="ut"/></r></p></e>
+     <e><p><l>málfrøði<s n="n"/><s n="m"/></l><r>sprogvidenskab<s n="n"/><s n="ut"/></r></p></e>
+     <e><p><l>mánadagur<s n="n"/><s n="m"/></l><r>mandag<s n="n"/><s n="ut"/></r></p></e>
      <e><p><l>navnorð<s n="n"/><s n="nt"/></l><r>navneord<s n="n"/><s n="nt"/></r></p></e>
-     <e><p><l>november<s n="n"/><s n="m"/></l><r>november<s n="n"/><s n="m"/></r></p></e>
-     <e><p><l>oktober<s n="n"/><s n="m"/></l><r>oktober<s n="n"/><s n="m"/></r></p></e>
+     <e><p><l>november<s n="n"/><s n="m"/></l><r>november<s n="n"/><s n="ut"/></r></p></e>
+     <e><p><l>oktober<s n="n"/><s n="m"/></l><r>oktober<s n="n"/><s n="ut"/></r></p></e>
      <e><p><l>orð<s n="n"/><s n="nt"/></l><r>ord<s n="n"/><s n="nt"/></r></p></e>
-     <e><p><l>oyggj<s n="n"/><s n="m"/></l><r>ø<s n="n"/><s n="m"/></r></p></e>
-     <e><p><l>oyðimørk<s n="n"/><s n="m"/></l><r>ørken<s n="n"/><s n="m"/></r></p></e>
-     <e><p><l>penicillin<s n="n"/><s n="m"/></l><r>penicillin<s n="n"/><s n="m"/></r></p></e>
+     <e><p><l>oyggj<s n="n"/><s n="m"/></l><r>ø<s n="n"/><s n="ut"/></r></p></e>
+     <e><p><l>oyðimørk<s n="n"/><s n="m"/></l><r>ørken<s n="n"/><s n="ut"/></r></p></e>
+     <e><p><l>penicillin<s n="n"/><s n="m"/></l><r>penicillin<s n="n"/><s n="ut"/></r></p></e>
      <e><p><l>penicillin<s n="n"/><s n="nt"/></l><r>penicillin<s n="n"/><s n="nt"/></r></p></e>
-     <e><p><l>phenol<s n="n"/><s n="m"/></l><r>fenol<s n="n"/><s n="m"/></r></p></e>
+     <e><p><l>phenol<s n="n"/><s n="m"/></l><r>fenol<s n="n"/><s n="ut"/></r></p></e>
      <e><p><l>phenol<s n="n"/><s n="nt"/></l><r>fenol<s n="n"/><s n="nt"/></r></p></e>
      <e><p><l>protein<s n="n"/><s n="nt"/></l><r>protein<s n="n"/><s n="nt"/></r></p></e>
-     <e><p><l>ravnur<s n="n"/><s n="m"/></l><r>ravn<s n="n"/><s n="m"/></r></p></e>
-     <e><p><l>regnskógur<s n="n"/><s n="m"/></l><r>regnskov<s n="n"/><s n="m"/></r></p></e>
-     <e><p><l>renessansan<s n="n"/><s n="m"/></l><r>renæssance<s n="n"/><s n="m"/></r></p></e>
-     <e><p><l>ritbúnaður<s n="n"/><s n="m"/></l><r>software<s n="n"/><s n="m"/></r></p></e>
+     <e><p><l>ravnur<s n="n"/><s n="m"/></l><r>ravn<s n="n"/><s n="ut"/></r></p></e>
+     <e><p><l>regnskógur<s n="n"/><s n="m"/></l><r>regnskov<s n="n"/><s n="ut"/></r></p></e>
+     <e><p><l>renessansan<s n="n"/><s n="m"/></l><r>renæssance<s n="n"/><s n="ut"/></r></p></e>
+     <e><p><l>ritbúnaður<s n="n"/><s n="m"/></l><r>software<s n="n"/><s n="ut"/></r></p></e>
      <e><p><l>ritbúnaður<s n="n"/><s n="nt"/></l><r>program<s n="n"/><s n="nt"/></r></p></e>
      <e><p><l>ritroynd<s n="n"/><s n="nt"/></l><r>essay<s n="n"/><s n="nt"/></r></p></e>
-     <e><p><l>róm<s n="n"/><s n="m"/></l><r>rom<s n="n"/><s n="m"/></r></p></e>
+     <e><p><l>róm<s n="n"/><s n="m"/></l><r>rom<s n="n"/><s n="ut"/></r></p></e>
      <e><p><l>sagnorð<s n="n"/><s n="nt"/></l><r>udsagnsord<s n="n"/><s n="nt"/></r></p></e>
      <e><p><l>sagnorð<s n="n"/><s n="nt"/></l><r>verbum<s n="n"/><s n="nt"/></r></p></e>
      <e><p><l>samheiti<s n="n"/><s n="nt"/></l><r>synonym<s n="n"/><s n="nt"/></r></p></e>
-     <e><p><l>september<s n="n"/><s n="m"/></l><r>september<s n="n"/><s n="m"/></r></p></e>
+     <e><p><l>september<s n="n"/><s n="m"/></l><r>september<s n="n"/><s n="ut"/></r></p></e>
      <e><p><l>sjálvmorð<s n="n"/><s n="nt"/></l><r>selvmord<s n="n"/><s n="nt"/></r></p></e>
      <e><p><l>sjógvur<s n="n"/><s n="nt"/></l><r>hav<s n="n"/><s n="nt"/></r></p></e>
      <e><p><l>skordýr<s n="n"/><s n="nt"/></l><r>insekt<s n="n"/><s n="nt"/></r></p></e>
      <e><p><l>skotár<s n="n"/><s n="nt"/></l><r>skudår<s n="n"/><s n="nt"/></r></p></e>
      <e><p><l>skriftmál<s n="n"/><s n="nt"/></l><r>skriftsprog<s n="n"/><s n="nt"/></r></p></e>
      <e><p><l>skriðdýr<s n="n"/><s n="nt"/></l><r>krybdyr<s n="n"/><s n="nt"/></r></p></e>
-     <e><p><l>soppar<s n="n"/><s n="m"/></l><r>svamp<s n="n"/><s n="m"/></r></p></e>
-     <e><p><l>sosialisma<s n="n"/><s n="m"/></l><r>socialism<s n="n"/><s n="m"/></r></p></e>
-     <e><p><l>stjørnufrøði<s n="n"/><s n="m"/></l><r>astronomi<s n="n"/><s n="m"/></r></p></e>
-     <e><p><l>støddfrøði<s n="n"/><s n="m"/></l><r>matematik<s n="n"/><s n="m"/></r></p></e>
+     <e><p><l>soppar<s n="n"/><s n="m"/></l><r>svamp<s n="n"/><s n="ut"/></r></p></e>
+     <e><p><l>sosialisma<s n="n"/><s n="m"/></l><r>socialism<s n="n"/><s n="ut"/></r></p></e>
+     <e><p><l>stjørnufrøði<s n="n"/><s n="m"/></l><r>astronomi<s n="n"/><s n="ut"/></r></p></e>
+     <e><p><l>støddfrøði<s n="n"/><s n="m"/></l><r>matematik<s n="n"/><s n="ut"/></r></p></e>
      <e><p><l>sunnudagur<s n="n"/><s n="m"/></l><r>søndag<s n="n"/><s n="ut"/></r></p></e>
-     <e><p><l>svanur<s n="n"/><s n="m"/></l><r>svane<s n="n"/><s n="m"/></r></p></e>
-     <e><p><l>svøríki<s n="n"/><s n="m"/></l><r>svensker<s n="n"/><s n="m"/></r></p></e>
-     <e><p><l>sámar<s n="n"/><s n="m"/></l><r>samer<s n="n"/><s n="m"/></r></p></e>
+     <e><p><l>svanur<s n="n"/><s n="m"/></l><r>svane<s n="n"/><s n="ut"/></r></p></e>
+     <e><p><l>svøríki<s n="n"/><s n="m"/></l><r>svensker<s n="n"/><s n="ut"/></r></p></e>
+     <e><p><l>sámar<s n="n"/><s n="m"/></l><r>samer<s n="n"/><s n="ut"/></r></p></e>
      <e><p><l>sólskipanin<s n="n"/><s n="nt"/></l><r>solsystem<s n="n"/><s n="nt"/></r></p></e>
-     <e><p><l>søga<s n="n"/><s n="m"/></l><r>historie<s n="n"/><s n="m"/></r></p></e>
+     <e><p><l>søga<s n="n"/><s n="m"/></l><r>historie<s n="n"/><s n="ut"/></r></p></e>
      <e><p><l>sølibat<s n="n"/><s n="nt"/></l><r>cølibat<s n="n"/><s n="nt"/></r></p></e>
      <e><p><l>súgdjór<s n="n"/><s n="nt"/></l><r>pattedyr<s n="n"/><s n="nt"/></r></p></e>
      <e><p><l>tal<s n="n"/><s n="nt"/></l><r>tal<s n="n"/><s n="nt"/></r></p></e>
-     <e><p><l>talufrælsi<s n="n"/><s n="m"/></l><r>ytringsfrihed<s n="n"/><s n="m"/></r></p></e>
-     <e><p><l>talv<s n="n"/><s n="m"/></l><r>remis<s n="n"/><s n="m"/></r></p></e>
-     <e><p><l>talv<s n="n"/><s n="m"/></l><r>skak<s n="n"/><s n="m"/></r></p></e>
+     <e><p><l>talufrælsi<s n="n"/><s n="m"/></l><r>ytringsfrihed<s n="n"/><s n="ut"/></r></p></e>
+     <e><p><l>talv<s n="n"/><s n="m"/></l><r>remis<s n="n"/><s n="ut"/></r></p></e>
+     <e><p><l>talv<s n="n"/><s n="m"/></l><r>skak<s n="n"/><s n="ut"/></r></p></e>
      <e><p><l>teknmál<s n="n"/><s n="nt"/></l><r>tegnsprog<s n="n"/><s n="nt"/></r></p></e>
-     <e><p><l>telda<s n="n"/><s n="m"/></l><r>computer<s n="n"/><s n="m"/></r></p></e>
-     <e><p><l>teldufrøði<s n="n"/><s n="m"/></l><r>datalogi<s n="n"/><s n="m"/></r></p></e>
-     <e><p><l>teldupostur<s n="n"/><s n="m"/></l><r>e-mail<s n="n"/><s n="m"/></r></p></e>
-     <e><p><l>teldupostur<s n="n"/><s n="m"/></l><r>mail<s n="n"/><s n="m"/></r></p></e>
-     <e><p><l>tjóð<s n="n"/><s n="m"/></l><r>nation<s n="n"/><s n="m"/></r></p></e>
-     <e><p><l>trælur<s n="n"/><s n="m"/></l><r>slave<s n="n"/><s n="m"/></r></p></e>
-     <e><p><l>trúarjáttan<s n="n"/><s n="m"/></l><r>trosbekendelse<s n="n"/><s n="m"/></r></p></e>
-     <e><p><l>tónleikur<s n="n"/><s n="m"/></l><r>musik<s n="n"/><s n="m"/></r></p></e>
-     <e><p><l>týsdagur<s n="n"/><s n="m"/></l><r>tirsdag<s n="n"/><s n="m"/></r></p></e>
-     <e><p><l>týskland<s n="n"/><s n="m"/></l><r>tysker<s n="n"/><s n="m"/></r></p></e>
-     <e><p><l>uglur<s n="n"/><s n="m"/></l><r>ugle<s n="n"/><s n="m"/></r></p></e>
-     <e><p><l>undirhald<s n="n"/><s n="m"/></l><r>underholdning<s n="n"/><s n="m"/></r></p></e>
-     <e><p><l>valdømi<s n="n"/><s n="m"/></l><r>valgkreds<s n="n"/><s n="m"/></r></p></e>
-     <e><p><l>vika<s n="n"/><s n="m"/></l><r>uge<s n="n"/><s n="m"/></r></p></e>
-     <e><p><l>vika<s n="n"/><s n="m"/></l><r>ugedag<s n="n"/><s n="m"/></r></p></e>
+     <e><p><l>telda<s n="n"/><s n="m"/></l><r>computer<s n="n"/><s n="ut"/></r></p></e>
+     <e><p><l>teldufrøði<s n="n"/><s n="m"/></l><r>datalogi<s n="n"/><s n="ut"/></r></p></e>
+     <e><p><l>teldupostur<s n="n"/><s n="m"/></l><r>e-mail<s n="n"/><s n="ut"/></r></p></e>
+     <e><p><l>teldupostur<s n="n"/><s n="m"/></l><r>mail<s n="n"/><s n="ut"/></r></p></e>
+     <e><p><l>tjóð<s n="n"/><s n="m"/></l><r>nation<s n="n"/><s n="ut"/></r></p></e>
+     <e><p><l>trælur<s n="n"/><s n="m"/></l><r>slave<s n="n"/><s n="ut"/></r></p></e>
+     <e><p><l>trúarjáttan<s n="n"/><s n="m"/></l><r>trosbekendelse<s n="n"/><s n="ut"/></r></p></e>
+     <e><p><l>tónleikur<s n="n"/><s n="m"/></l><r>musik<s n="n"/><s n="ut"/></r></p></e>
+     <e><p><l>týsdagur<s n="n"/><s n="m"/></l><r>tirsdag<s n="n"/><s n="ut"/></r></p></e>
+     <e><p><l>týskland<s n="n"/><s n="m"/></l><r>tysker<s n="n"/><s n="ut"/></r></p></e>
+     <e><p><l>uglur<s n="n"/><s n="m"/></l><r>ugle<s n="n"/><s n="ut"/></r></p></e>
+     <e><p><l>undirhald<s n="n"/><s n="m"/></l><r>underholdning<s n="n"/><s n="ut"/></r></p></e>
+     <e><p><l>valdømi<s n="n"/><s n="m"/></l><r>valgkreds<s n="n"/><s n="ut"/></r></p></e>
+     <e><p><l>vika<s n="n"/><s n="m"/></l><r>uge<s n="n"/><s n="ut"/></r></p></e>
+     <e><p><l>vika<s n="n"/><s n="m"/></l><r>ugedag<s n="n"/><s n="ut"/></r></p></e>
      <e><p><l>vitamin<s n="n"/><s n="nt"/></l><r>vitamin<s n="n"/><s n="nt"/></r></p></e>
-     <e><p><l>vodka<s n="n"/><s n="m"/></l><r>vodka<s n="n"/><s n="m"/></r></p></e>
+     <e><p><l>vodka<s n="n"/><s n="m"/></l><r>vodka<s n="n"/><s n="ut"/></r></p></e>
      <e><p><l>vídd<s n="n"/><s n="nt"/></l><r>areal<s n="n"/><s n="nt"/></r></p></e>
-     <e><p><l>víkingur<s n="n"/><s n="m"/></l><r>viking<s n="n"/><s n="m"/></r></p></e>
-     <e><p><l>yvirgangsfólk<s n="n"/><s n="m"/></l><r>terrorist<s n="n"/><s n="m"/></r></p></e>
-     <e><p><l>Ítróttur<s n="n"/><s n="m"/></l><r>sport<s n="n"/><s n="m"/></r></p></e>
-     <e><p><l>átrúnaður<s n="n"/><s n="m"/></l><r>religion<s n="n"/><s n="m"/></r></p></e>
+     <e><p><l>víkingur<s n="n"/><s n="m"/></l><r>viking<s n="n"/><s n="ut"/></r></p></e>
+     <e><p><l>yvirgangsfólk<s n="n"/><s n="m"/></l><r>terrorist<s n="n"/><s n="ut"/></r></p></e>
+     <e><p><l>Ítróttur<s n="n"/><s n="m"/></l><r>sport<s n="n"/><s n="ut"/></r></p></e>
+     <e><p><l>átrúnaður<s n="n"/><s n="m"/></l><r>religion<s n="n"/><s n="ut"/></r></p></e>
      <e><p><l>ævintýr<s n="n"/><s n="nt"/></l><r>eventyr<s n="n"/><s n="nt"/></r></p></e>
      <e><p><l>økisnavn<s n="n"/><s n="nt"/></l><r>domænenavn<s n="n"/><s n="nt"/></r></p></e>
-     <e><p><l>úlvur<s n="n"/><s n="m"/></l><r>ulv<s n="n"/><s n="m"/></r></p></e>
+     <e><p><l>úlvur<s n="n"/><s n="m"/></l><r>ulv<s n="n"/><s n="ut"/></r></p></e>
 
    </section>
 </dictionary>
