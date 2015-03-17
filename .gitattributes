@@ -1,5 +1,22 @@
 * text=auto !eol
+/AUTHORS -text
+/COPYING -text
+/ChangeLog -text
+/Makefile.am -text
+/NEWS -text
 /README -text
+/apertium-fao-dan.dan-fao.lrx -text
+/apertium-fao-dan.dan-fao.t1x -text
+/apertium-fao-dan.dan-fao.t2x -text
+/apertium-fao-dan.dan-fao.t3x -text
+/apertium-fao-dan.fao-dan.dix -text
+/apertium-fao-dan.fao-dan.lrx -text
+/apertium-fao-dan.fao-dan.t1x -text
+/apertium-fao-dan.fao-dan.t2x -text
+/apertium-fao-dan.fao-dan.t3x -text
+/autogen.sh -text
+/configure.ac -text
 dev/swadesh_list.txt -text
 dev/wiki.n.xml -text
 dev/wiki.np-top.xml -text
+/modes.xml -text
