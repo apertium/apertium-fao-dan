@@ -8,6 +8,7 @@
     <sdef n="n"     c="Noun"/>
     <sdef n="nt"    c="Neuter"/>
     <sdef n="f"    c="Neuter"/>
+    <sdef n="ut"    c="Neuter"/>
     <sdef n="m"    c="Neuter"/>
     <sdef n="sg"    c="Singular"/>
     <sdef n="pl"    c="Plural"/>
@@ -145,7 +146,7 @@
      <e><p><l>sosialisma<s n="n"/><s n="m"/></l><r>socialism<s n="n"/><s n="m"/></r></p></e>
      <e><p><l>stjørnufrøði<s n="n"/><s n="m"/></l><r>astronomi<s n="n"/><s n="m"/></r></p></e>
      <e><p><l>støddfrøði<s n="n"/><s n="m"/></l><r>matematik<s n="n"/><s n="m"/></r></p></e>
-     <e><p><l>sunnudagur<s n="n"/><s n="m"/></l><r>søndag<s n="n"/><s n="m"/></r></p></e>
+     <e><p><l>sunnudagur<s n="n"/><s n="m"/></l><r>søndag<s n="n"/><s n="ut"/></r></p></e>
      <e><p><l>svanur<s n="n"/><s n="m"/></l><r>svane<s n="n"/><s n="m"/></r></p></e>
      <e><p><l>svøríki<s n="n"/><s n="m"/></l><r>svensker<s n="n"/><s n="m"/></r></p></e>
      <e><p><l>sámar<s n="n"/><s n="m"/></l><r>samer<s n="n"/><s n="m"/></r></p></e>

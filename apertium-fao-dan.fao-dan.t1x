@@ -10,8 +10,33 @@
   </section-def-cats>
 
   <section-def-attrs>
+    <def-attr n="a_nom">
+      <attr-item tags="n"/>
+    </def-attr>
+
+    <def-attr n="a_nbr">
+      <attr-item tags="sg"/>
+      <attr-item tags="pl"/>
+      <attr-item tags="sp"/>
+    </def-attr>
+
+    <def-attr n="a_def">
+      <attr-item tags="ind"/>
+      <attr-item tags="def"/>
+    </def-attr>
+
+    <def-attr n="a_gen">
+      <attr-item tags="nt"/>
+      <attr-item tags="f"/>
+      <attr-item tags="m"/>
+      <attr-item tags="ut"/>
+    </def-attr>
+
     <def-attr n="a_cas">
       <attr-item tags="nom"/>
+      <attr-item tags="gen"/>
+      <attr-item tags="dat"/>
+      <attr-item tags="acc"/>
     </def-attr>
   </section-def-attrs>
 
@@ -29,6 +54,31 @@
   </section-def-macros>
 
   <section-rules>
+    <rule comment="REGLA: n">
+      <pattern>
+        <pattern-item n="nom"/>
+      </pattern>
+      <action>
+        <out>
+          <chunk name="nom" case="caseFirstWord">
+            <tags>
+              <tag><lit-tag v="SENT"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="lemh"/>
+              <clip pos="1" side="tl" part="a_nom"/>
+              <clip pos="1" side="tl" part="a_gen"/>
+              <clip pos="1" side="tl" part="a_nbr"/>
+              <clip pos="1" side="tl" part="a_def"/>
+              <clip pos="1" side="tl" part="a_cas"/>
+              <clip pos="1" side="tl" part="lemq"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+
     <rule comment="REGLA: SENT">
       <pattern>
         <pattern-item n="sent"/>
@@ -46,6 +96,7 @@
         </out>
       </action>
     </rule>
+
   </section-rules>
 </transfer>
 
