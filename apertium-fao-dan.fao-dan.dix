@@ -4,15 +4,85 @@
   <alphabet>aAáÁăảạÆbBcCčdDÐeEéèễệfFgGhHiIíjJkKlLmMnNoOóöớpPqQrRsSšştTŢuUúüưvVwWxXyYzZ</alphabet>
 
   <sdefs>
-    <!-- Define symbol definitions within <sdef> here. -->
-    <sdef n="n"     c="Noun"/>
-    <sdef n="nt"    c="Neuter"/>
-    <sdef n="f"    c="Neuter"/>
-    <sdef n="ut"    c="Neuter"/>
-    <sdef n="m"    c="Neuter"/>
-    <sdef n="sg"    c="Singular"/>
-    <sdef n="pl"    c="Plural"/>
-  </sdefs>
+<sdef n="n"         c="Noun"/>
+<sdef n="np"        c="Proper noun"/>
+<sdef n="num"       c="Numeral"/>
+<sdef n="prn"       c="Pronoun"/>
+<sdef n="ant"      c="Anthroponym"/>
+<sdef n="adj"       c="Adjective"/>
+<sdef n="cnjcoo"    c=""/>
+<sdef n="cnjsub"    c=""/>
+<sdef n="neg"       c="negation"/>
+<sdef n="apos"      c="apostrophe"/>
+<sdef n="du"      c="dualis"/>
+<sdef n="pr"        c="Preposition"/>
+<sdef n="adv"       c="Adverb"/>
+<sdef n="vblex"     c="Verb"/>
+<sdef n="vaux"      c="Verb"/>
+<sdef n="vbmod"      c="Modal verb"/>
+<sdef n="vbser"      c="Verb 'to be'"/>
+<sdef n="vbhaver"   c="Verb 'to have'"/>
+<sdef n="part"  c="infinitive participle"/>
+<sdef n="ij"        c="Interjection"/>
+<sdef n="sg"     c="Singular"/>
+<sdef n="pl"     c="Plural"/>
+<sdef n="sp"     c="Singular / plural"/>
+<sdef n="unc"   c="Uncountable"/>
+<sdef n="det"     c="Determiner"/>
+<sdef n="pstv"  c="-s verbs"/>
+<sdef n="dem"     c="Demonstrative"/>
+<sdef n="acr"     c="acronym"/>
+<sdef n="emph"   c="Emphatic"/>
+<sdef n="ref"   c="Reflexive"/>
+<sdef n="res"   c="Reciprocal pronoun"/>
+<sdef n="pos"     c="Possessive"/>
+<sdef n="itg"     c="Question word / interrogative"/>
+<sdef n="qnt"     c="Quantifier"/>
+<sdef n="ord"      c="Ordinal"/>
+<sdef n="def"      c="Definite"/>
+<sdef n="ind"      c="Indefinite"/>
+<sdef n="lpar"    c="Left parenthesis" />
+<sdef n="rpar"    c="Right parenthesis" />
+<sdef n="p1"      c="First person"/>
+<sdef n="p2"      c="Second person"/>
+<sdef n="p3"      c="Third person"/>
+
+<sdef n="sint"      c="Synthetic"/>
+<sdef n="unsint"    c="Not synthetic"/>
+
+<sdef n="un"        c="Common / neuter"/>
+<sdef n="top"        c="toponym"/>
+<sdef n="m"        c="Masculine"/>
+<sdef n="f"        c="Feminine"/>
+<sdef n="ut"        c="Common"/>
+<sdef n="nt"        c="Neuter"/>
+<sdef n="mf"        c="Masculine / feminine"/>
+<sdef n="nom"   c="nominative"/>
+<sdef n="acc"   c="accusative"/>
+<sdef n="imp"   c="imperative"/>
+<sdef n="gen"   c="genitive"/>
+<sdef n="pst"      c="Positive degree"/>
+<sdef n="cnjadv"    c="Conjunction adverbs - Danish?"/>
+<sdef n="comp"      c="Comparative degree"/>
+<sdef n="sup"      c="Superlative degree"/>
+
+<sdef n="inf"      c="Infinitive"/>
+<sdef n="pres"     c="Present tense"/>
+<sdef n="past"     c="Past tense (Danish)"/>
+<sdef n="pret"     c="Past tense (Bokmål)"/>
+<sdef n="actv"     c="Active voice"/>
+<sdef n="pasv"     c="Passive voice (Danish)"/>
+<sdef n="pass"     c="Passive voice (Bokmål)"/>
+<sdef n="pprs"      c="Present participle"/>
+<sdef n="pp"      c="Past participle"/>
+
+<sdef n="GD"        c="Gender to be determined"/>
+<sdef n="ND"        c="Number to be determined"/>
+
+<sdef n="sent"      c="Sentence boundary"/>
+<sdef n="cm"      c="Comma"/>
+<sdef n="clb"       c="Clause boundary"/>
+</sdefs>
 
    <section id="main" type="standard">
 
@@ -185,7 +255,18 @@
      <e><p><l>økisnavn<s n="n"/><s n="nt"/></l><r>domænenavn<s n="n"/><s n="nt"/></r></p></e>
      <e><p><l>úlvur<s n="n"/><s n="m"/></l><r>ulv<s n="n"/><s n="ut"/></r></p></e>
 
+<!-- Punctuation -->
+
+<e><re>[.\?;:!·…]+</re><p><l><s n="sent"/></l><r><s n="sent"/><s n="clb"/></r></p></e>
+<e><re>,</re><p><l><s n="cm"/></l><r><s n="cm"/></r></p></e>
+<e><re>[0-9]+([.,][0-9]+)?</re><p><l><s n="det"/><s n="qnt"/></l><r><s n="det"/><s n="qnt"/></r></p></e>
+<e><re>[a-zæøåášŧŋđžčäö]</re><p><l>alphabet<s n="n"/><s n="nt"/></l><r>alphabet<s n="n"/><s n="m"/></r></p></e>
+<e><re>[\(\[]</re><p><l><s n="lpar"/></l><r><s n="lpar"/></r></p></e>
+<e><re>[\)\]]</re><p><l><s n="rpar"/></l><r><s n="rpar"/></r></p></e>
+<e>       <p><l>'<s n="apos"/></l><r>'<s n="apos"/></r></p></e>
+
    </section>
+
 </dictionary>
 
 <!-- 
