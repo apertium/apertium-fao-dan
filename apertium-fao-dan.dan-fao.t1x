@@ -74,8 +74,8 @@
               <clip pos="1" side="tl" part="a_nom"/>
               <clip pos="1" side="tl" part="a_gen"/>
               <clip pos="1" side="tl" part="a_nbr"/>
-              <clip pos="1" side="tl" part="a_def"/>
               <clip pos="1" side="tl" part="a_cas"/>
+              <clip pos="1" side="tl" part="a_def"/>
               <clip pos="1" side="tl" part="lemq"/>
             </lu>
           </chunk>
