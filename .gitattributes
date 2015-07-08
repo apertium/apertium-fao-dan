@@ -17,6 +17,8 @@
 /autogen.sh -text
 /configure.ac -text
 dev/swadesh_list.txt -text
+dev/testvoc/bidix-unknowns.sh -text
+dev/testvoc/generation.sh -text
 dev/wiki.n.xml -text
 dev/wiki.np-top.xml -text
 /modes.xml -text
