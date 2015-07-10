@@ -36,7 +36,7 @@ analysis-expansion ()
             gsub("/","\\/",esc)
             gsub("^","\\^",esc)
             gsub("$","\\$",esc)
-            print "["esc"] ^"$1"/"$2"$ ^./.<sent><clb>$"
+            print "["esc"] ^"$1"/"$2"$ ^./.<sent>$"
           }'
 }
 
