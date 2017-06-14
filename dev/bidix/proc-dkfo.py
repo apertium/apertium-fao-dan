@@ -48,6 +48,9 @@ def parse_entry(line): #{
 	return entries;
 #}
 
+### Usage:
+## python3 proc-dkfo.py dkfo_010.xml  ~/source/apertium/languages/apertium-dan/apertium-dan.dan.dix ~/source/giellatekno/langs/fao/src/morphology/lexicon.tmp.lexc 
+
 doc = ET.parse(sys.argv[1]);
 dix = ET.parse(sys.argv[2]);
 #langs/fao/src/morphology/lexicon.tmp.lexc
