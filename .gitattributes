@@ -18,6 +18,7 @@
 /autogen.sh -text
 /configure.ac -text
 dev/bidix/dkfo_010.xml -text
+dev/bidix/dkfo_conv.py -text
 dev/bidix/proc-dkfo.py -text
 dev/swadesh_list.txt -text
 dev/testvoc/bidix-unknowns.sh -text
