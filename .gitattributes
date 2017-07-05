@@ -19,7 +19,9 @@
 /configure.ac -text
 dev/bidix/dkfo_010.xml -text
 dev/bidix/dkfo_conv.py -text
+dev/bidix/make_fao-dan_entries.py -text
 dev/bidix/proc-dkfo.py -text
+dev/bidix/r.txt -text
 dev/swadesh_list.txt -text
 dev/testvoc/bidix-unknowns.sh -text
 dev/testvoc/generation.sh -text
