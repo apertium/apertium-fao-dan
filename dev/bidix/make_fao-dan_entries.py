@@ -20,8 +20,15 @@ class Entry:
             for ana in ans:
                 if '<cmp>' not in ana and '<sent>' not in ana and '<punct>' not in ana:
                     lem = re.match('\+?(.*?)\+?<', ana).group(1)
-                    tags = tuple(filter(lambda x: x in ana, ['<n>', '<np>', '<adj>', '<adv>', '<vblex>', '<sint>', '<pos>',
-                                                            '<m>', '<f>', '<nt>', '<mf>', '<comp>']))
+                    tags = tuple()
+                    if '<vblex>' in ana:
+                        tags = tuple(['<vblex>'])
+                    elif '<n>' in ana or '<np>' in ana:
+                        tags = tuple(filter(lambda x: x in ana, ['<n>', '<np>', '<m>', '<f>', '<nt>', '<mf>']))
+                    elif '<adj>' in ana:
+                        tags = tuple(filter(lambda x: x in ana, ['<adj>', '<sint>', '<pos>', '<comp>']))
+                    elif '<adv>' in ana:
+                        tags = tuple(['<adv>'])
                     ana_clear = tuple([lem, tags])
                     ans_clear.append(ana_clear)
             ans_clear = list(set(ans_clear))
