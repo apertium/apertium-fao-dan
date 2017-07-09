@@ -22,6 +22,7 @@ dev/bidix/dkfo_conv.py -text
 dev/bidix/fao-dan -text
 dev/bidix/make_fao-dan_entries.py -text
 dev/bidix/make_fao-nor_bidix.py -text
+dev/bidix/make_fao-nor_entries.py -text
 dev/bidix/proc-dkfo.py -text
 dev/bidix/r.txt -text
 dev/swadesh_list.txt -text
