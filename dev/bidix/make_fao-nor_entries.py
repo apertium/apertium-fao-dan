@@ -1,5 +1,8 @@
 import xml.etree.ElementTree as ET
 import sys
+from html import unescape
+
+# python3 make_fao-nor_entries.py fao-dan apertium-dan-nor.dan-nor.dix intersection
 
 
 def find_intersect(fd, dn):
@@ -90,7 +93,8 @@ def make_xml(raw):
     r.text = raw[3]
     for tag in raw[4]:
         s2 = ET.SubElement(r, 's', n=tag)
-    ET.dump(e)
+    a = ET.tostring(e).decode('utf-8').replace('!!!!!', '<b/>').replace('%%%%%', '<g>').replace('#####', '</g>')
+    print(unescape(a))
 
 
 def main():
@@ -100,7 +104,7 @@ def main():
     with open(sys.argv[2]) as g:  # dan-nor bidix
         dn = g.read().replace('<b/>', '!!!!!').replace('<g>', '%%%%%').replace('</g>', '#####')
 
-    with open('intersection') as inter:
+    with open(sys.argv[3]) as inter:  # intersection
         pairs = [line.strip().split(';') for line in inter.read().strip().split('\n')]
 
     for pair in pairs:
