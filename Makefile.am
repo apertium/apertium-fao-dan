@@ -11,21 +11,21 @@ PREFIX2=$(LANG2)-$(LANG1)
 BASENAME=apertium-$(PREFIX1)
 
 TARGETS_COMMON = \
-	$(PREFIX1).automorf.bin \ 
+	$(PREFIX1).automorf.hfst \
 	$(PREFIX1).prob \
 	$(PREFIX1).rlx.bin \
 	$(PREFIX1).autobil.bin \
 		$(PREFIX1).autolex.bin \
-	$(PREFIX1).autogen.bin \ 
+	$(PREFIX1).autogen.bin \
 	$(PREFIX1).t1x.bin \
 	$(PREFIX1).t2x.bin \
 	$(PREFIX1).t3x.bin \
-	$(PREFIX2).automorf.bin \ 
+	$(PREFIX2).automorf.bin \
 	$(PREFIX2).prob \
 	$(PREFIX2).rlx.bin \
 	$(PREFIX2).autobil.bin \
 		$(PREFIX2).autolex.bin \
-	$(PREFIX2).autogen.bin \ 
+	$(PREFIX2).autogen.hfst \
     $(PREFIX2).t1x.bin \
 	$(PREFIX2).t2x.bin \
 	$(PREFIX2).t3x.bin
@@ -42,16 +42,34 @@ TARGETS_COMMON = \
 # Faroese analysis:
 # -------------------
 
-$(PREFIX1).automorf.bin: $(AP_SRC1)/$(LANG1).automorf.bin $(PREFIX1).autobil.bin
-	lt-trim $^ $@
+# -------------------
+# Faroese analysis:
+# -------------------
+
+.deps/$(LANG1).automorf.hfst: $(AP_SRC1)/apertium-und.$(LANG1)-und.LR.att.gz .deps/.d
+	$(ZCAT) $< | hfst-txt2fst > $@
+
+.deps/$(PREFIX1).automorf-trimmed.hfst: .deps/$(LANG1).automorf.hfst .deps/$(PREFIX1).autobil.prefixes
+	hfst-compose-intersect -1 $< -2 .deps/$(PREFIX1).autobil.prefixes -o $@
+
+$(PREFIX1).automorf.hfst: .deps/$(PREFIX1).automorf-trimmed.hfst
+	hfst-fst2fst -w -i $< -o $@
+
+.deps/$(PREFIX1).automorf-untrimmed.hfst: .deps/$(LANG1).automorf.hfst
+	hfst-fst2fst -w -i $< -o $@
+
+$(PREFIX1).automorf-untrimmed.hfst: .deps/$(PREFIX1).automorf-untrimmed.hfst
+	cp $< $@
 
 # -------------------
 # Faroese generation:
 # ---------------------
 
+.deps/$(LANG1).autogen.hfst: $(AP_SRC1)/apertium-$(LANG1).$(LANG1).RL.att.gz .deps/.d
+	$(ZCAT) $< | hfst-txt2fst > $@
 
-$(PREFIX2).autogen.bin: $(AP_SRC1)/$(LANG1).autogen.bin
-	cp $< $@
+$(PREFIX2).autogen.hfst: .deps/$(LANG1).autogen.hfst
+	hfst-fst2fst -O -i $< -o $@
 
 # -------------------
 # Danish analysis:
@@ -82,8 +100,8 @@ $(PREFIX2).prob: $(AP_SRC2)/$(LANG2).prob
 ## Disambiguation rules
 ###############################################################################
 
-$(PREFIX1).rlx.bin: $(AP_SRC1)/apertium-$(LANG1).$(LANG1).rlx
-	cg-comp $< $@
+$(PREFIX1).rlx.bin: $(AP_SRC1)/$(LANG1).mor.rlx.bin
+	cp $< $@
 
 $(PREFIX2).rlx.bin: $(AP_SRC2)/apertium-$(LANG2).$(LANG2).rlx
 	cg-comp $< $@
