@@ -5,17 +5,15 @@
 
   <mode name="fao-dan" install="yes">
     <pipeline>
-      <program name="lt-proc -w">
-        <file name="fao-dan.automorf.bin"/>
+      <program name="hfst-proc -w">
+        <file name="fao-dan.automorf.hfst"/>
       </program>
-
-
-      <program name="cg-proc -w">
+      <program name="cg-proc -w -1 -n">
         <file name="fao-dan.rlx.bin"/>
       </program>
-      <program name="apertium-tagger -g $2">
+<!--      <program name="apertium-tagger -g $2">
         <file name="fao-dan.prob"/>
-      </program>
+      </program>-->
       <program name="apertium-pretransfer"/>
       <program name="lt-proc -b">
         <file name="fao-dan.autobil.bin"/>
@@ -44,17 +42,17 @@
 
   <mode name="fao-dan-dgen" install="no">
     <pipeline>
-      <program name="lt-proc -w">
-        <file name="fao-dan.automorf.bin"/>
+      <program name="hfst-proc -w">
+        <file name="fao-dan.automorf.hfst"/>
       </program>
 
 
-      <program name="cg-proc -w">
+      <program name="cg-proc -w -1 -n">
         <file name="fao-dan.rlx.bin"/>
       </program>
-      <program name="apertium-tagger -g $2">
+<!--      <program name="apertium-tagger -g $2">
         <file name="fao-dan.prob"/>
-      </program>
+      </program>-->
       <program name="apertium-pretransfer"/>
       <program name="lt-proc -b">
         <file name="fao-dan.autobil.bin"/>
@@ -79,16 +77,16 @@
 
   <mode name="fao-dan-morph" install="no">
     <pipeline>
-      <program name="lt-proc -w">
-        <file name="fao-dan.automorf.bin"/>
+      <program name="hfst-proc -w">
+        <file name="fao-dan.automorf.hfst"/>
       </program>
     </pipeline>
   </mode>
 
   <mode name="fao-dan-disam" install="no">
     <pipeline>
-      <program name="lt-proc -w">
-        <file name="fao-dan.automorf.bin"/>
+      <program name="hfst-proc -w">
+        <file name="fao-dan.automorf.hfst"/>
       </program>
       <program name="cg-conv -a"/>
       <program name="vislcg3 --trace --grammar">
@@ -99,50 +97,50 @@
 
   <mode name="fao-dan-tagger" install="no">
     <pipeline>
-      <program name="lt-proc -w">
-        <file name="fao-dan.automorf.bin"/>
+      <program name="hfst-proc -w">
+        <file name="fao-dan.automorf.hfst"/>
       </program>
 
 
-      <program name="cg-proc -w">
+      <program name="cg-proc -w -1 -n">
         <file name="fao-dan.rlx.bin"/>
       </program>
-      <program name="apertium-tagger -g $2">
+<!--      <program name="apertium-tagger -g $2">
         <file name="fao-dan.prob"/>
-      </program>
+      </program>-->
     </pipeline>
   </mode>
 
   <mode name="fao-dan-pretransfer" install="no">
     <pipeline>
-      <program name="lt-proc -w">
-        <file name="fao-dan.automorf.bin"/>
+      <program name="hfst-proc -w">
+        <file name="fao-dan.automorf.hfst"/>
       </program>
 
 
-      <program name="cg-proc -w">
+      <program name="cg-proc -w -1 -n">
         <file name="fao-dan.rlx.bin"/>
       </program>
-      <program name="apertium-tagger -g $2">
+<!--      <program name="apertium-tagger -g $2">
         <file name="fao-dan.prob"/>
-      </program>
+      </program>-->
       <program name="apertium-pretransfer"/>
     </pipeline>
   </mode>
 
   <mode name="fao-dan-biltrans" install="no">
     <pipeline>
-      <program name="lt-proc -w">
-        <file name="fao-dan.automorf.bin"/>
+      <program name="hfst-proc -w">
+        <file name="fao-dan.automorf.hfst"/>
       </program>
 
 
-      <program name="cg-proc -w">
+      <program name="cg-proc -w -1 -n">
         <file name="fao-dan.rlx.bin"/>
       </program>
-      <program name="apertium-tagger -g $2">
+<!--      <program name="apertium-tagger -g $2">
         <file name="fao-dan.prob"/>
-      </program>
+      </program>-->
       <program name="apertium-pretransfer"/>
       <program name="lt-proc -b">
         <file name="fao-dan.autobil.bin"/>
@@ -152,17 +150,17 @@
 
   <mode name="fao-dan-lex" install="no">
     <pipeline>
-      <program name="lt-proc -w">
-        <file name="fao-dan.automorf.bin"/>
+      <program name="hfst-proc -w">
+        <file name="fao-dan.automorf.hfst"/>
       </program>
 
 
-      <program name="cg-proc -w">
+      <program name="cg-proc -w -1 -n">
         <file name="fao-dan.rlx.bin"/>
       </program>
-      <program name="apertium-tagger -g $2">
+<!--      <program name="apertium-tagger -g $2">
         <file name="fao-dan.prob"/>
-      </program>
+      </program>-->
       <program name="apertium-pretransfer"/>
       <program name="lt-proc -b">
         <file name="fao-dan.autobil.bin"/>
@@ -175,17 +173,17 @@
 
   <mode name="fao-dan-transfer" install="no">
     <pipeline>
-      <program name="lt-proc -w">
-        <file name="fao-dan.automorf.bin"/>
+      <program name="hfst-proc -w">
+        <file name="fao-dan.automorf.hfst"/>
       </program>
 
 
-      <program name="cg-proc -w">
+      <program name="cg-proc -w -1 -n">
         <file name="fao-dan.rlx.bin"/>
       </program>
-      <program name="apertium-tagger -g $2">
+<!--      <program name="apertium-tagger -g $2">
         <file name="fao-dan.prob"/>
-      </program>
+      </program>-->
       <program name="apertium-pretransfer"/>
       <program name="lt-proc -b">
         <file name="fao-dan.autobil.bin"/>
@@ -202,17 +200,17 @@
 
   <mode name="fao-dan-interchunk" install="no">
     <pipeline>
-      <program name="lt-proc -w">
-        <file name="fao-dan.automorf.bin"/>
+      <program name="hfst-proc -w">
+        <file name="fao-dan.automorf.hfst"/>
       </program>
 
 
-      <program name="cg-proc -w">
+      <program name="cg-proc -w -1 -n">
         <file name="fao-dan.rlx.bin"/>
       </program>
-      <program name="apertium-tagger -g $2">
+<!--      <program name="apertium-tagger -g $2">
         <file name="fao-dan.prob"/>
-      </program>
+      </program>-->
       <program name="apertium-pretransfer"/>
       <program name="lt-proc -b">
         <file name="fao-dan.autobil.bin"/>
@@ -233,17 +231,17 @@
 
   <mode name="fao-dan-postchunk" install="no">
     <pipeline>
-      <program name="lt-proc -w">
-        <file name="fao-dan.automorf.bin"/>
+      <program name="hfst-proc -w">
+        <file name="fao-dan.automorf.hfst"/>
       </program>
 
 
-      <program name="cg-proc -w">
+      <program name="cg-proc -w -1 -n">
         <file name="fao-dan.rlx.bin"/>
       </program>
-      <program name="apertium-tagger -g $2">
+<!--      <program name="apertium-tagger -g $2">
         <file name="fao-dan.prob"/>
-      </program>
+      </program>-->
       <program name="apertium-pretransfer"/>
       <program name="lt-proc -b">
         <file name="fao-dan.autobil.bin"/>
