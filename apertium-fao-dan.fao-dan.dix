@@ -86,6 +86,10 @@
 
    <section id="main" type="standard">
 
+    <!-- SECTION: Conjunctions-->
+
+<e>       <p><l>og<s n="cnjcoo"/></l>              <r>og<s n="cnjcoo"/></r></p></e>
+
      <!-- SECTION: Nouns -->
 
      <e><p><l>abstraktur<s n="n"/><s n="m"/></l><r>abstraktion<s n="n"/><s n="ut"/></r></p></e>
@@ -312,7 +316,6 @@
 <e>       <p><l>uppe<b/>i<s n="pr"/></l>               <r>oppe<b/>på<s n="pr"/></r></p></e>
 <e>       <p><l>upp<b/>till<s n="pr"/></l>             <r>op<b/>til<s n="pr"/></r></p></e>
 <e>       <p><l>även<b/>om<s n="pr"/></l>              <r>selvom<s n="pr"/></r></p></e>
-
 
 
 <!-- Punctuation -->
