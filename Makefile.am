@@ -12,7 +12,6 @@ BASENAME=apertium-$(PREFIX1)
 
 TARGETS_COMMON = \
 	$(PREFIX1).automorf.hfst \
-	$(PREFIX1).prob \
 	$(PREFIX1).rlx.bin \
 	$(PREFIX1).autobil.bin \
 		$(PREFIX1).autolex.bin \
@@ -30,6 +29,7 @@ TARGETS_COMMON = \
 	$(PREFIX2).t2x.bin \
 	$(PREFIX2).t3x.bin
 
+debug: $(PREFIX1).automorf-untrimmed.hfst
 
 # This include defines goals for install-modes, .deps/.d and .mode files:
 @ap_include@
@@ -37,10 +37,6 @@ TARGETS_COMMON = \
 ###############################################################################
 ## Monolingual transducers
 ###############################################################################
-
-# -------------------
-# Faroese analysis:
-# -------------------
 
 # -------------------
 # Faroese analysis:
@@ -89,9 +85,6 @@ $(PREFIX1).autogen.bin: $(AP_SRC2)/$(LANG2).autogen.bin
 ###############################################################################
 ## Tagger models
 ###############################################################################
-
-$(PREFIX1).prob: $(AP_SRC1)/$(LANG1).prob
-	cp $< $@
 
 $(PREFIX2).prob: $(AP_SRC2)/$(LANG2).prob
 	cp $< $@
