@@ -1,3 +1,5 @@
+.deps/
+/*.hfst
 /.test-mt
 /.test-ref
 /INSTALL
