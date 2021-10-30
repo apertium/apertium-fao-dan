@@ -111,6 +111,26 @@
 <e>       <p><l>og<s n="cnjcoo"/></l>              <r>og<s n="cnjcoo"/></r></p></e>
 
 
+<!-- SECTION: Adverbs -->
+
+<!-- SECTION: Adverbs -->
+<e><p><l>hví<s n="adv"/></l> <r>hvorledes<s n="adv"/></r></p></e>
+<e><p><l>hvar<s n="adv"/></l> <r>hvor<s n="adv"/></r></p></e>
+<e><p><l>ikki<s n="adv"/></l> <r>ikke<s n="adv"/></r></p></e>
+<e><p><l>eisini<s n="adv"/></l> <r>også<s n="adv"/></r></p></e>
+<e><p><l>í<b/>dag<s n="adv"/></l> <r>i<b/>dag<s n="adv"/></r></p></e>
+<e><p><l>upp<s n="adv"/></l> <r>op<s n="adv"/></r></p></e>
+<e><p><l>fram<s n="adv"/></l> <r>frem<s n="adv"/></r></p></e>
+<e><p><l>haðan<s n="adv"/></l> <r>derfra<s n="adv"/></r></p></e>
+<e><p><l>umleið<s n="adv"/></l> <r>omkring<s n="adv"/></r></p></e>
+
+<e><p><l>niður<s n="adv"/></l> <r>ned<s n="adv"/></r></p></e>
+<e><p><l>ov<s n="adv"/></l> <r>for<s n="adv"/></r></p></e>
+<e><p><l>áðrenn<s n="adv"/></l> <r>før<s n="adv"/></r></p></e>
+<e><p><l>meðan<s n="adv"/></l> <r>mens<s n="adv"/></r></p></e>
+<e><p><l>oman<s n="pr"/></l> <r>nedover<s n="pr"/></r></p></e>
+<e><p><l>niðan<s n="adv"/></l> <r>opover<s n="adv"/></r></p></e>
+
 <!-- SECTION: Adjectives -->
 
 <e><p><l>gamal<s n="adj"/></l> <r>gammel<s n="adj"/><s n="sint"/></r></p><par n="adj:adj"/></e>
@@ -3418,7 +3438,6 @@
 <e><p><l>Josephsen<s n="np"/><s n="cog"/></l><r>Josephsen<s n="np"/><s n="cog"/></r></p></e>
 <e><p><l>Jakku<s n="np"/><s n="cog"/></l><r>Jakku<s n="np"/><s n="cog"/></r></p></e>
 <e><p><l>Ibsen<s n="np"/><s n="cog"/></l><r>Ibsen<s n="np"/><s n="cog"/></r></p></e>
-<e><p><l>Hvar<s n="np"/><s n="cog"/></l><r>Hvar<s n="np"/><s n="cog"/></r></p></e>
 <e><p><l>Holger<s n="np"/><s n="cog"/></l><r>Holger<s n="np"/><s n="cog"/></r></p></e>
 <e><p><l>Høg<s n="np"/><s n="cog"/></l><r>Høg<s n="np"/><s n="cog"/></r></p></e>
 <e><p><l>Hjo<s n="np"/><s n="cog"/></l><r>Hjo<s n="np"/><s n="cog"/></r></p></e>
