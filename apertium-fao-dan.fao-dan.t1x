@@ -19,6 +19,9 @@
     <def-cat n="det">
       <cat-item tags="det.*"/>
     </def-cat>
+    <def-cat n="prn.dem.pl">
+      <cat-item tags="prn.dem.*.pl.*"/>
+    </def-cat>
     <def-cat n="vblex">
       <cat-item tags="vblex.*"/>
     </def-cat>
@@ -27,6 +30,9 @@
     </def-cat>
     <def-cat n="vbser">
       <cat-item tags="vbser.*"/>
+    </def-cat>
+    <def-cat n="vbmod">
+      <cat-item tags="vbmod.*"/>
     </def-cat>
     <def-cat n="vbhaver">
       <cat-item tags="vbhaver.*"/>
@@ -40,11 +46,17 @@
     <def-cat n="prn_pers">
       <cat-item tags="prn.pers.*"/>
     </def-cat>
-    <def-cat n="lex-du">
-      <cat-item lemma="du" tags="prn.pers.p2"/>
+    <def-cat n="prn_itg">
+      <cat-item tags="prn.itg.*"/>
     </def-cat>
-    <def-cat n="lex-jeg">
-      <cat-item lemma="jeg" tags="prn.pers.p1"/>
+    <def-cat n="prn_pos">
+      <cat-item tags="prn.pos.*"/>
+    </def-cat>
+    <def-cat n="lex-tu">
+      <cat-item lemma="tú" tags="prn.pers.p2"/>
+    </def-cat>
+    <def-cat n="lex-eg">
+      <cat-item lemma="eg" tags="prn.pers.p1"/>
     </def-cat>
     <def-cat n="sent">
       <cat-item tags="sent"/>
@@ -61,6 +73,10 @@
 
     <def-attr n="a_np">
       <attr-item tags="np"/>
+    </def-attr>
+
+    <def-attr n="a_det">
+      <attr-item tags="det"/>
     </def-attr>
 
     <def-attr n="a_adj">
@@ -89,11 +105,17 @@
     <def-attr n="a_ut">
       <attr-item tags="m"/>
       <attr-item tags="f"/>
+      <attr-item tags="mf"/>
     </def-attr>
 
     <def-attr n="a_def">
       <attr-item tags="ind"/>
       <attr-item tags="def"/>
+    </def-attr>
+
+    <def-attr n="a_detdef">
+      <attr-item tags="ind"/>
+      <attr-item tags="dem"/>
     </def-attr>
 
     <def-attr n="a_gen">
@@ -113,6 +135,8 @@
     <def-attr n="a_verb">
       <attr-item tags="vblex"/>
       <attr-item tags="vbser"/>
+      <attr-item tags="vbmod"/>
+      <attr-item tags="vaux"/>
       <attr-item tags="vbhaver"/>
     </def-attr>
 
@@ -159,9 +183,37 @@
 	<let>
 	  <clip pos="1" side="tl" part="a_gen"/><lit-tag v="ut"/>
 	</let>
-	    </when>
+      </when>
+      <when>
+	<test>
+	  <or>
+	    <equal><clip pos="1" side="sl" part="a_ut"/><lit-tag v="m"/></equal>
+	    <equal><clip pos="1" side="sl" part="a_ut"/><lit-tag v="f"/></equal>
+	    <equal><clip pos="1" side="sl" part="a_ut"/><lit-tag v="mf"/></equal>
+	  </or>
+	</test>
+	<let>
+	  <clip pos="1" side="tl" part="a_gen"/><lit-tag v="ut"/>
+	</let>
+      </when>
       </choose>
     </def-macro>
+
+
+    <def-macro n="un" npar="1">
+      <choose>
+      <when>
+	<test>
+	    <equal><clip pos="1" side="sl" part="a_gen"/><lit-tag v="pl"/></equal>
+	</test>
+	<let>
+	  <clip pos="1" side="tl" part="a_gen"/><lit-tag v="un"/>
+	</let>
+    </when>
+      </choose>
+    </def-macro>
+
+    
     <def-macro n="sint" npar="1">
       <choose><when>
 	  <test><equal><clip pos="1" side="sl" part="a_adj"/><lit-tag v="adj"/></equal></test>
@@ -219,6 +271,8 @@
       </action>
     </rule>
 
+    <!-- inn: tað<prn><dem><nt><pl><dat> -->
+    <!--  ut: den<det><dem><un><pl>      -->
 
     <rule comment="REGLA: det">
       <pattern>
@@ -233,7 +287,9 @@
             </tags>
             <lu>
               <clip pos="1" side="tl" part="lemh"/>
-	      <lit-tag v="det.ind"/>
+<!--	      <lit-tag v="det.ind"/>-->
+              <clip pos="1" side="tl" part="a_det"/>
+              <clip pos="1" side="tl" part="a_detdef"/>
               <clip pos="1" side="tl" part="a_gen"/>
               <clip pos="1" side="tl" part="a_nbr"/>
               <clip pos="1" side="tl" part="lemq"/>
@@ -243,10 +299,31 @@
       </action>
     </rule>
 
-
+    <!-- inn: tað<prn><dem><nt><pl><dat> -->
+    <!--  ut: den<det><dem><un><pl>      -->
+    <rule comment="REGLA: det pl">
+      <pattern>
+        <pattern-item n="prn.dem.pl"/>
+      </pattern>
+      <action>
+	<call-macro n="un"><with-param pos="1"/></call-macro>
+        <out>
+          <chunk name="nom" case="caseFirstWord">
+            <tags>
+              <tag><lit-tag v="SN"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="lemh"/>
+	      <lit-tag v="det.dem.un.pl"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+    
     <rule comment="REGLA: perspron">
       <pattern>
-        <pattern-item n="lex-jeg"/>
+        <pattern-item n="lex-eg"/>
       </pattern>
       <action>
 	<call-macro n="ut"><with-param pos="1"/></call-macro>
@@ -267,10 +344,9 @@
       </action>
     </rule>
     
-
     <rule comment="REGLA: perspron">
       <pattern>
-        <pattern-item n="lex-du"/>
+        <pattern-item n="lex-tu"/>
       </pattern>
       <action>
 	<call-macro n="ut"><with-param pos="1"/></call-macro>
@@ -284,6 +360,27 @@
 	      <lit-tag v="prn.pers.p2.ut"/>
               <clip pos="1" side="tl" part="a_nbr"/>
               <clip pos="1" side="tl" part="a_cas"/>
+              <clip pos="1" side="tl" part="lemq"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+    
+    <rule comment="REGLA: itgpron">
+      <pattern>
+        <pattern-item n="prn_itg"/>
+      </pattern>
+      <action>
+	<call-macro n="ut"><with-param pos="1"/></call-macro>
+        <out>
+          <chunk name="nom" case="caseFirstWord">
+            <tags>
+              <tag><lit-tag v="SN"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="lemh"/>
+	      <lit-tag v="prn.itg"/>
               <clip pos="1" side="tl" part="lemq"/>
             </lu>
           </chunk>
