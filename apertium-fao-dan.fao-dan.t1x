@@ -52,6 +52,9 @@
     <def-cat n="prn_pos">
       <cat-item tags="prn.pos.*"/>
     </def-cat>
+    <def-cat n="prn_pers_gen">
+      <cat-item tags="prn.pers.*.gen"/>
+    </def-cat>
     <def-cat n="lex-tu">
       <cat-item lemma="tú" tags="prn.pers.p2"/>
     </def-cat>
@@ -299,6 +302,29 @@
       </action>
     </rule>
 
+    <rule comment="REGLA: posspron">
+      <pattern>
+        <pattern-item n="prn_pers_gen"/>
+      </pattern>
+      <action>
+	<call-macro n="ut"><with-param pos="1"/></call-macro>
+        <out>
+          <chunk name="nom" case="caseFirstWord">
+            <tags>
+              <tag><lit-tag v="POSS"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="lemh"/>
+	      <lit-tag v="det.pos"/>
+              <clip pos="1" side="tl" part="a_gen"/>
+              <clip pos="1" side="tl" part="a_nbr"/>
+              <clip pos="1" side="tl" part="lemq"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+    
     <!-- inn: tað<prn><dem><nt><pl><dat> -->
     <!--  ut: den<det><dem><un><pl>      -->
     <rule comment="REGLA: det pl">
@@ -461,7 +487,7 @@
         <out>
           <chunk name="nom" case="caseFirstWord">
             <tags>
-              <tag><lit-tag v="SN"/></tag>
+              <tag><lit-tag v="CC"/></tag>
             </tags>
             <lu>
               <clip pos="1" side="tl" part="lemh"/>
@@ -481,7 +507,7 @@
         <out>
           <chunk name="nom" case="caseFirstWord">
             <tags>
-              <tag><lit-tag v="SN"/></tag>
+              <tag><lit-tag v="SV"/></tag>
             </tags>
             <lu>
               <clip pos="1" side="tl" part="lemh"/>
@@ -503,7 +529,7 @@
         <out>
           <chunk name="nom" case="caseFirstWord">
             <tags>
-              <tag><lit-tag v="SN"/></tag>
+              <tag><lit-tag v="SV"/></tag>
             </tags>
             <lu>
               <clip pos="1" side="tl" part="lemh"/>
@@ -526,7 +552,7 @@
         <out>
           <chunk name="nom" case="caseFirstWord">
             <tags>
-              <tag><lit-tag v="SN"/></tag>
+              <tag><lit-tag v="SV"/></tag>
             </tags>
             <lu>
               <clip pos="1" side="tl" part="lemh"/>
@@ -563,6 +589,7 @@
         </out>
       </action>
     </rule>
+
 
     <rule comment="REGLA: SENT">
       <pattern>
