@@ -10,6 +10,13 @@
       <select lemma="energía" tags="n.*"/>
     </match>
   </rule>
+
+
+  <rule>
+    <match lemma="játtan">
+      <select lemma="bevilling" tags="n.*"/>
+    </match>
+  </rule>
 </rules>
 
 <!-- 
