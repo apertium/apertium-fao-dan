@@ -17,6 +17,14 @@
       <select lemma="bevilling" tags="n.*"/>
     </match>
   </rule>
+
+  <rule>
+    <match lemma="vera"/>
+    <match lemma="grunda">
+      <select lemma="grundlægge" tags="vblex.*"/>
+    </match>
+    <match lemma="á"/>
+  </rule>
 </rules>
 
 <!-- 
