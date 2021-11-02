@@ -165,13 +165,13 @@
 <e><p><l>hvør<s n="prn"/><s n="itg"/></l><r>hvad<s n="prn"/><s n="itg"/></r></p></e>
 <e><p><l>samur<s n="prn"/></l><r>samme<s n="prn"/></r></p></e>
 <e><p><l>seg<s n="prn"/><s n="ref"/></l><r>seg<s n="prn"/><s n="ref"/><s n="p3"/><s n="un"/><s n="sp"/></r></p></e>
-<e><p><l>tað<s n="prn"/><s n="dem"/></l><r>den<s n="prn"/><s n="dem"/></r></p></e>
+<e><p><l>tað<s n="prn"/><s n="dem"/></l><r>den<s n="det"/><s n="dem"/></r></p></e>
 <e><p><l>tað<s n="prn"/><s n="pers"/><s n="pl"/></l> <r>de<s n="prn"/><s n="pers"/><s n="p3"/><s n="un"/><s n="pl"/></r></p></e>
-<e><p><l>tað<s n="prn"/><s n="pers"/><s n="sg"/></l> <r>den<s n="prn"/><s n="pers"/><s n="p3"/><s n="n"/><s n="nt"/><s n="sg"/></r></p></e>
+<e><p><l>tað<s n="prn"/><s n="pers"/><s n="sg"/></l> <r>den<s n="prn"/><s n="pers"/><s n="p3"/><s n="nt"/><s n="sg"/></r></p></e>
 <e><p><l>tey<s n="prn"/><s n="pl"/><s n="pers"/></l> <r>de<s n="prn"/><s n="pers"/><s n="p3"/><s n="pl"/></r></p></e>
 <e><p><l>tú<s n="prn"/><s n="pers"/><s n="sg"/></l><r>du<s n="prn"/><s n="pers"/><s n="p2"/><s n="n"/><s n="ut"/><s n="sg"/></r></p></e>
 <e><p><l>hesin<s n="prn"/><s n="dem"/></l><r>denne<s n="prn"/><s n="dem"/></r></p></e>
-<e><p><l>tann<s n="prn"/><s n="dem"/></l><r>den<s n="prn"/><s n="dem"/></r></p></e>
+<e><p><l>tann<s n="prn"/><s n="dem"/></l><r>den<s n="det"/><s n="dem"/></r></p></e>
 
 <!-- SECTION: Determiners-->
 
@@ -700,7 +700,6 @@
 <e><p><l>góðgerin<s n="adj"/></l><r>velgørende<s n="adj"/></r></p><par n="adj:adj"/></e>
 <e><p><l>góðlyndur<s n="adj"/></l><r>ejegod<s n="adj"/></r></p><par n="adj:adj"/></e>
 <e><p><l>góður<s n="adj"/></l> <r>god<s n="adj"/><s n="sint"/></r></p><par n="adj:adj"/></e>
-<e><p><l>góður<s n="adj"/></l><r>god<s n="adj"/></r></p><par n="adj:adj"/></e>
 <e><p><l>góður<s n="adj"/></l><r>gunstig<s n="adj"/></r></p><par n="adj:adj"/></e>
 <e><p><l>góður<s n="adj"/></l><r>komfortabel<s n="adj"/></r></p><par n="adj:adj"/></e>
 <e><p><l>hagfrøðiligur<s n="adj"/></l><r>statistisk<s n="adj"/></r></p><par n="adj:adj"/></e>
@@ -721,7 +720,6 @@
 <e><p><l>heimspekiligur<s n="adj"/></l><r>filosofisk<s n="adj"/></r></p><par n="adj:adj"/></e>
 <e><p><l>heitur<s n="adj"/></l> <r>varm<s n="adj"/><s n="sint"/></r></p><par n="adj:adj"/></e>
 <e><p><l>heitur<s n="adj"/></l><r>lidenskabelig<s n="adj"/></r></p><par n="adj:adj"/></e>
-<e><p><l>heitur<s n="adj"/></l><r>varm<s n="adj"/></r></p><par n="adj:adj"/></e>
 <e><p><l>heiðurligur<s n="adj"/></l><r>ærefuld<s n="adj"/></r></p><par n="adj:adj"/></e>
 <e><p><l>heppin<s n="adj"/></l><r>heldig<s n="adj"/></r></p><par n="adj:adj"/></e>
 <e><p><l>hermálsligur<s n="adj"/></l><r>strategisk<s n="adj"/></r></p><par n="adj:adj"/></e>
@@ -776,9 +774,7 @@
 <e><p><l>jugoslaviskur<s n="adj"/></l><r>jugoslavisk<s n="adj"/></r></p><par n="adj:adj"/></e>
 <e><p><l>jødiskur<s n="adj"/></l><r>jødisk<s n="adj"/></r></p><par n="adj:adj"/></e>
 <e><p><l>kaldur<s n="adj"/></l> <r>kold<s n="adj"/><s n="sint"/></r></p><par n="adj:adj"/></e>
-<e><p><l>kaldur<s n="adj"/></l><r>kold<s n="adj"/></r></p><par n="adj:adj"/></e>
 <e><p><l>kalur<s n="adj"/></l> <r>kold<s n="adj"/><s n="sint"/></r></p><par n="adj:adj"/></e>
-<e><p><l>kalur<s n="adj"/></l><r>kold<s n="adj"/></r></p><par n="adj:adj"/></e>
 <e><p><l>kanadiskur<s n="adj"/></l><r>canadisk<s n="adj"/></r></p><par n="adj:adj"/></e>
 <e><p><l>kapitalistiskur<s n="adj"/></l><r>kapitalistisk<s n="adj"/></r></p><par n="adj:adj"/></e>
 <e><p><l>kappingarførur<s n="adj"/></l><r>konkurrencedygtig<s n="adj"/></r></p><par n="adj:adj"/></e>
@@ -890,7 +886,6 @@
 <e><p><l>menniskjansligur<s n="adj"/></l><r>menneskelig<s n="adj"/></r></p><par n="adj:adj"/></e>
 <e><p><l>mentanarligur<s n="adj"/></l><r>kulturel<s n="adj"/></r></p><par n="adj:adj"/></e>
 <e><p><l>mettur<s n="adj"/></l><r>mæt<s n="adj"/></r></p><par n="adj:adj"/></e>
-<e><p><l>mikil<s n="adj"/></l><r>stor<s n="adj"/></r></p><par n="adj:adj"/></e>
 <e><p><l>mikil<s n="adj"/></l><r>stor<s n="adj"/><s n="sint"/></r></p><par n="adj:adj"/></e>
 <e><p><l>mildur<s n="adj"/></l><r>mild<s n="adj"/></r></p><par n="adj:adj"/></e>
 <e><p><l>minniligur<s n="adj"/></l><r>mindeværdig<s n="adj"/></r></p><par n="adj:adj"/></e>
@@ -1124,7 +1119,6 @@
 <e><p><l>stórligur<s n="adj"/></l><r>grov<s n="adj"/></r></p><par n="adj:adj"/></e>
 <e><p><l>stórur<s n="adj"/></l> <r>stor<s n="adj"/><s n="sint"/></r></p><par n="adj:adj"/></e>
 <e><p><l>stórur<s n="adj"/></l><r>betydelig<s n="adj"/></r></p><par n="adj:adj"/></e>
-<e><p><l>stórur<s n="adj"/></l><r>stor<s n="adj"/></r></p><par n="adj:adj"/></e>
 <e><p><l>støddfrøðiligur<s n="adj"/></l><r>matematisk<s n="adj"/></r></p><par n="adj:adj"/></e>
 <e><p><l>støðugur<s n="adj"/></l><r>stabil<s n="adj"/></r></p><par n="adj:adj"/></e>
 <e><p><l>stútutur<s n="adj"/></l><r>utilnærmelig<s n="adj"/></r></p><par n="adj:adj"/></e>
@@ -14351,7 +14345,6 @@
 <e>       <p><l>venja<s n="vblex"/></l><r>skrue<s n="vblex"/></r></p></e>
 <e>       <p><l>venja<s n="vblex"/></l><r>tørne<s n="vblex"/></r></p></e>
 <e>       <p><l>venja<s n="vblex"/></l><r>vending<s n="vblex"/></r></p></e>
-<e>       <p><l>vera<s n="vblex"/></l><r>være<s n="vblex"/></r></p></e>
 <e>       <p><l>vera<s n="vblex"/></l><r>være<s n="vbser"/></r></p></e>
 <e>       <p><l>verja<s n="vblex"/></l><r>love<s n="vblex"/></r></p></e>
 <e>       <p><l>verja<s n="vblex"/></l><r>værdige<s n="vblex"/></r></p></e>

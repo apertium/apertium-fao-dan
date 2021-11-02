@@ -1,0 +1,137 @@
+! fao-dan.rtx
+
+!!!!!!!!!!!!!!!!!!!!!!!!!
+! Attribute Categories: !
+!!!!!!!!!!!!!!!!!!!!!!!!!
+
+gender = m f nt ut un fn mf GD ;
+! TODO do I need non_overwritable_gender = … @mf ;
+gender_adj_sg_ind = nt ut ;
+number = sg pl sp ND ;
+defnes = def ind ;
+tense = inf pret pres pp supn imp ;
+person = (PD p3) p1 p2 p3 PD ;
+voice = (VD actv) pasv actv ;
+a_adj = sint ord pp pprs ;
+a_cmp = cmp ;
+a_det = dem qnt pos emph ;
+a_neg = neg ;
+a_comp = pst comp sup ;
+a_prop = ant cog top org al ;
+a_clb  = clb ;
+a_prn  = def dem ind itg pers pos ref rel res ;
+case_danprn = gen nom acc ;
+
+! Word sets:
+w_tu = tú ;                     ! pers.p2
+w_eg = eg ;                     ! pers.p1
+w_tann = tann ;                 ! det
+
+
+!!!!!!!!!!!!!!!!!!!!!!
+! Tag Rewrite Rules: !
+!!!!!!!!!!!!!!!!!!!!!!
+
+tense > tense : pret past ;
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Tag Order (Output Patterns): !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+adj:   _.a_adj.a_comp.gender.number.defnes.a_cmp;
+np:    _.a_prop.gender.a_cmp;
+n:     _.gender.number.defnes.a_cmp;
+det:   _.a_det.gender.number;
+vblex: _.tense.voice;
+vbser: _.tense.voice;
+pr:    _;
+adv:   _.a_comp;
+ij:    _;
+cnjsub: _.a_clb;
+cnjcoo: _.a_clb;
+part:   _;
+
+prn_withpers:  _.a_prn.person.gender.number.case_danprn;
+prn_nopers:    _.a_prn.gender.number.case_danprn;
+prn: (if (1.a_prn = pers or 1.a_prn = ref)
+         1(prn_withpers)
+      else
+         1(prn_nopers)
+     );
+
+
+! Note: attrs not included here are not available to reduction rules
+N:     _.gender.number.defnes.a_cmp;
+A:     _.a_adj.a_comp.gender.number.defnes.a_cmp;
+NP:    _.gender.number.defnes;
+DP:    _.gender.number.defnes;
+PP:    _;
+VP:    _.tense.number.voice;
+ADV:   _;
+CNJ:   _;
+PRN:   _;
+! TODO: Put gender/number on VP for pp-samsvar stuff?
+
+
+!!!!!!!!!!!!!!!!!!!!
+! Reduction Rules: !
+!!!!!!!!!!!!!!!!!!!!
+
+N -> %n         { %1[lemcase=$lemcase] }
+   | %np        { %1[lemcase=$lemcase] }
+   | n.*.cmp %N { 1[lemcase=$lemcase] %2 }
+   ;
+
+! A gender:
+! - if pst and ND/GD: pl/un
+! - if sup and GD: fn
+! A N gender:
+! - if NOT adj.un and adj.GD OR n.gen/sl != n.gen/tl:
+!   - if sg and ind and n.lemh!=första and n.ut/n.nt: adj.gen=n.gen
+!   - if sg/sp and def/första:
+!     - if n.ut and noun-use-masc-adj: adj.gen=m
+!     - if n.nt: adj.gen=fn
+
+A -> "A->adj"       %adj { %1[gender=(if (1.a_comp = pst and 1.gender = GD) un el-if (1.a_comp = sup and 1.gender = GD) fn else $gender),
+                              number=(if (1.a_comp = pst and 1.number = ND) pl else $number)] }
+   | "A->n+A" n.*.cmp %A { 1 %2 }
+   ;
+
+! TODO: Stop <sint> getting copied from sl side if not in tl side!
+! <popcorndude> if you specify a side it takes that side or empty, if you don't specify a side it tries tl->ref->sl  [15:41]
+! ^nøye<adj><sint><pst><nt><sg><ind>/noga<adj><pst><nt><sg><ind>$
+! should not get sint!
+
+NP ->   %N { %1[lemcase=$lemcase] }
+    | A.*.pl.*.def %N { 1[gender=un, number=sp] _ %2 }
+    | A %N { 1[gender=(if (2.number = pl) un else 2.gender), number=2.number] _ %2 }
+    | %prn { %1 }
+    ;
+
+PP -> pr %DP { 1 _ 2 } ;
+
+DP -> det %NP
+      { 1[gender=(if (2.number = pl) un else 2.gender), number=2.number] _ 2 }
+    | "!!!" prn %NP
+      { 1[gender=(if (2.number = pl) un else 2.gender), number=2.number] _ 2 }
+    | "n.def det ~> det n.ind"
+      %NP det.pos
+      { 2[gender=(if (1.number = pl) un else 1.gender), number=1.number, lemcase=1.lemcase]
+        _
+        1[defnes=ind, lemcase=2.lemcase]
+      }
+      ;
+
+! TODO: Do any tags need propagating here?
+ADV -> "ADV" %adv { %1 }
+    | "ADV.nt" %A.*.nt { %1 }
+    ;
+
+VP -> %vblex { %1 }
+    | %vbser { %1 }
+    ;
+
+
+CNJ -> %cnjcoo { %1 }
+     | %cnjsub { %1 }
+     ;
