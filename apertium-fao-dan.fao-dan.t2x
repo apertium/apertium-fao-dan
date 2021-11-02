@@ -1,6 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <interchunk>
   <section-def-cats>
+    <def-cat n="WORD">
+      <cat-item tags="*"/>
+    </def-cat>
+    <def-cat n="SV">
+      <cat-item tags="SV.*"/>
+    </def-cat>
+    <def-cat n="CNP">
+      <cat-item tags="cnjcoo.@CNP.*"/>
+      <cat-item tags="cnjcoo.@CNP"/>
+    </def-cat>
+    <def-cat n="CVP">
+      <cat-item tags="cnjcoo.@CVP.*"/>
+      <cat-item tags="cnjcoo.@CVP"/>
+    </def-cat>
+    <def-cat n="POSS">
+      <cat-item tags="POSS.*"/>
+    </def-cat>
     <def-cat n="SN">
       <cat-item tags="SN"/>
       <cat-item tags="SN.*"/>
@@ -27,6 +44,22 @@
   </section-def-macros>
 
   <section-rules>
+    <rule comment="REGLA: N prn_pos
+                   -----
+                   Move possessor to front">
+      <pattern>
+        <pattern-item n="SN"/>
+        <pattern-item n="POSS"/>
+      </pattern>
+      <action>
+        <out>
+          <chunk><clip pos="2" part="whole"/></chunk>
+          <b pos="1"/>
+          <chunk><clip pos="1" part="whole"/></chunk>
+        </out>
+      </action>
+    </rule>
+
     <rule comment="REGLA: SN">
       <pattern>
         <pattern-item n="SN"/>
