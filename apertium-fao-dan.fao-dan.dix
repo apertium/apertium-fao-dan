@@ -667,7 +667,6 @@
 <e><p><l>galliskur<s n="adj"/></l><r>gallisk<s n="adj"/></r></p><par n="adj:adj"/></e>
 <e><p><l>gamal<s n="adj"/></l> <r>gammel<s n="adj"/><s n="sint"/></r></p><par n="adj:adj"/></e>
 <e><p><l>gamal<s n="adj"/></l><r>arkaisk<s n="adj"/></r></p><par n="adj:adj"/></e>
-<e><p><l>gamal<s n="adj"/></l><r>gammel<s n="adj"/></r></p><par n="adj:adj"/></e>
 <e><p><l>gamal<s n="adj"/></l><r>mangeårig<s n="adj"/></r></p><par n="adj:adj"/></e>
 <e><p><l>geislavirkin<s n="adj"/></l><r>radioaktiv<s n="adj"/></r></p><par n="adj:adj"/></e>
 <e><p><l>geldur<s n="adj"/></l><r>gold<s n="adj"/></r></p><par n="adj:adj"/></e>
@@ -852,7 +851,6 @@
 <e><p><l>líkur<s n="adj"/></l><r>lig<s n="adj"/></r></p><par n="adj:adj"/></e>
 <e><p><l>líkur<s n="adj"/></l><r>ligeværdig<s n="adj"/></r></p><par n="adj:adj"/></e>
 <e><p><l>lítil<s n="adj"/></l> <r>lille<s n="adj"/><s n="sint"/></r></p><par n="adj:adj"/></e>
-<e><p><l>lítil<s n="adj"/></l><r>lille<s n="adj"/></r></p><par n="adj:adj"/></e>
 <e><p><l>lívfrøðiligur<s n="adj"/></l><r>biologisk<s n="adj"/></r></p><par n="adj:adj"/></e>
 <e><p><l>lívlangur<s n="adj"/></l><r>livslang<s n="adj"/></r></p><par n="adj:adj"/></e>
 <e><p><l>lívlangur<s n="adj"/></l><r>livsvarig<s n="adj"/></r></p><par n="adj:adj"/></e>
@@ -1076,7 +1074,7 @@
 <e><p><l>smakkgóður<s n="adj"/></l><r>delikat<s n="adj"/></r></p><par n="adj:adj"/></e>
 <e><p><l>smalur<s n="adj"/></l><r>smal<s n="adj"/></r></p><par n="adj:adj"/></e>
 <e><p><l>smidligur<s n="adj"/></l><r>spændstig<s n="adj"/></r></p><par n="adj:adj"/></e>
-<e><p><l>smáur<s n="adj"/></l><r>lille<s n="adj"/></r></p><par n="adj:adj"/></e>
+<e><p><l>smáur<s n="adj"/></l><r>lille<s n="adj"/><s n="sint"/></r></p><par n="adj:adj"/></e>
 <e><p><l>smáur<s n="adj"/></l><r>mini<s n="adj"/></r></p><par n="adj:adj"/></e>
 <e><p><l>snarráðin<s n="adj"/></l><r>snarrådig<s n="adj"/></r></p><par n="adj:adj"/></e>
 <e><p><l>snarsintur<s n="adj"/></l><r>hidsig<s n="adj"/></r></p><par n="adj:adj"/></e>
@@ -6690,7 +6688,7 @@
 <e><p><l>áminning<s n="n"/><s n="f"/></l><r>formaning<s n="n"/><s n="ut"/></r></p></e>
 <e><p><l>áogn<s n="n"/><s n="nt"/></l><r>*tilgodehavende<s n="n"/><s n="nt"/></r></p></e>
 <e><p><l>ápostul<s n="n"/><s n="m"/></l><r>apostel<s n="n"/><s n="ut"/></r></p></e>
-<e><p><l>ár<s n="n"/><s n="f"/></l><r>åring<s n="n"/><s n="ut"/></r></p></e>
+<!-- <e><p><l>ár<s n="n"/><s n="f"/></l><r>åring<s n="n"/><s n="ut"/></r></p></e> -->
 <e><p><l>ár<s n="n"/><s n="nt"/></l><r>år<s n="n"/><s n="nt"/></r></p></e>
 <e><p><l>áramál<s n="n"/><s n="nt"/></l><r>åremål<s n="n"/><s n="nt"/></r></p></e>
 <e><p><l>árbók<s n="n"/><s n="f"/></l><r>annal<s n="n"/><s n="ut"/></r></p></e>
@@ -11982,7 +11980,7 @@
 <e>       <p><l>eggja<s n="vblex"/></l><r>ægge<s n="vblex"/></r></p></e>
 <e>       <p><l>eiga<s n="vblex"/></l><r>beholde<s n="vblex"/></r></p></e>
 <e>       <p><l>eiga<s n="vblex"/></l><r>eje<s n="vblex"/></r></p></e>
-<e>       <p><l>eiga<s n="vblex"/></l><r>have<s n="vblex"/></r></p></e>
+<e>       <p><l>eiga<s n="vblex"/></l><r>have<s n="vbhaver"/></r></p></e>
 <e>       <p><l>einfalda<s n="vblex"/></l><r>forenkle<s n="vblex"/></r></p></e>
 <e>       <p><l>einfalda<s n="vblex"/></l><r>simplificere<s n="vblex"/></r></p></e>
 <e>       <p><l>einfalda<s n="vblex"/></l><r>vulgarisere<s n="vblex"/></r></p></e>
@@ -12492,7 +12490,6 @@
 <e>       <p><l>harðna<s n="vblex"/></l><r>hærdne<s n="vblex"/></r></p></e>
 <e>       <p><l>hata<s n="vblex"/></l><r>hade<s n="vblex"/></r></p></e>
 <e>       <p><l>hava<s n="vblex"/></l><r>have<s n="vbhaver"/></r></p></e>
-<e>       <p><l>hava<s n="vblex"/></l><r>have<s n="vblex"/></r></p></e>
 <e>       <p><l>hava<s n="vblex"/></l><r>lagerføre<s n="vblex"/></r></p></e>
 <e>       <p><l>hava<s n="vblex"/></l><r>vedligeholde<s n="vblex"/></r></p></e>
 <e>       <p><l>havna<s n="vblex"/></l><r>forsage<s n="vblex"/></r></p></e>

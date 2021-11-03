@@ -1,7 +1,7 @@
 <rules>
-  <!-- 
-    This rule chooses "energía" as the translation of "power" when it is preceded by "wind". 
-    Add your own rules within <rule> here, using the resources below as a guide 
+  <!--
+    This rule chooses "energía" as the translation of "power" when it is preceded by "wind".
+    Add your own rules within <rule> here, using the resources below as a guide
   -->
 
   <rule>
@@ -25,13 +25,16 @@
     </match>
     <match lemma="á"/>
   </rule>
-</rules>
 
-<!-- 
-Resources: 
+<!--
+Resources:
     https://wiki.apertium.org/wiki/How_to_get_started_with_lexical_selection_rules
     https://wiki.apertium.org/wiki/Constraint-based_lexical_selection
     https://wiki.apertium.org/wiki/Lexical_selection
     https://wiki.apertium.org/wiki/Learning_rules_from_parallel_and_non-parallel_corpora
 -->
+  <rule><match lemma="gamal" tags="adj.*"><select lemma="gammel"/></match></rule>
 
+  <rule><match lemma="dáma" tags="vblex.*"><select lemma="lide"/></match></rule>
+
+</rules>
