@@ -7,6 +7,7 @@
 gender = m f nt ut un fn mf GD ;
 ! TODO do I need non_overwritable_gender = … @mf ;
 gender_adj_sg_ind = nt ut ;
+gender_adj = (GD ut) nt ut un GD ;
 number = sg pl sp ND ;
 defnes = def ind ;
 tense = inf pret pres pp supn imp ;
@@ -97,7 +98,7 @@ N -> %n         { %1[lemcase=$lemcase] }
 !     - if n.ut and noun-use-masc-adj: adj.gen=m
 !     - if n.nt: adj.gen=fn
 
-A -> "A->adj"       %adj { %1[gender=(if (1.a_comp = pst and 1.gender = GD) un el-if (1.a_comp = sup and 1.gender = GD) fn else $gender),
+A -> "A->adj"       %adj { %1[gender=(if (1.a_comp = pst and 1.gender = GD) un el-if (1.a_comp = sup and 1.gender = GD) fn else $gender_adj),
                               number=(if (1.a_comp = pst and 1.number = ND) pl else $number)] }
    | "A->n+A" n.*.cmp %A { 1 %2 }
    ;
@@ -109,6 +110,7 @@ A -> "A->adj"       %adj { %1[gender=(if (1.a_comp = pst and 1.gender = GD) un e
 
 NP ->   %N { %1[lemcase=$lemcase] }
     | A.*.pl.*.def %N { 1[gender=un, number=sp] _ %2 }
+    | A.*.pst.*.sg.*.def %N { 1[gender=un, number=sp] _ %2 }
     | A %N { 1[gender=(if (2.number = pl) un else 2.gender), number=2.number] _ %2 }
     | %prn { %1 }
     ;
