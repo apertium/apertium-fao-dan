@@ -157,11 +157,11 @@
 <!-- SECTION: Pronouns -->
 
 <e><p><l>báðir<s n="prn"/><s n="ind"/></l><r>begge<s n="prn"/><s n="def"/></r></p></e>
-<e><p><l>eg<s n="prn"/><s n="pers"/><s n="sg"/></l><r>jeg<s n="prn"/><s n="pers"/><s n="p1"/><s n="n"/><s n="ut"/><s n="sg"/></r></p></e>
+<e><p><l>eg<s n="prn"/><s n="pers"/><s n="sg"/></l><r>jeg<s n="prn"/><s n="pers"/><s n="p1"/><s n="ut"/><s n="sg"/></r></p></e>
 <e><p><l>eingin<s n="prn"/><s n="ind"/></l><r>ingen<s n="prn"/><s n="ind"/></r></p></e>
-<e><p><l>hann<s n="prn"/><s n="pers"/><s n="sg"/></l> <r>han<s n="prn"/><s n="pers"/><s n="p3"/><s n="n"/><s n="m"/><s n="sg"/></r></p></e>
-<e><p><l>hann<s n="prn"/><s n="pers"/><s n="sg"/><s n="gen"/></l> <r>hans<s n="det"/><s n="pos"/><s n="n"/><s n="ut"/><s n="sg"/></r></p></e>
-<e><p><l>hon<s n="prn"/><s n="pers"/><s n="sg"/></l> <r>hun<s n="prn"/><s n="pers"/><s n="p3"/><s n="n"/><s n="f"/><s n="sg"/></r></p></e>
+<e><p><l>hann<s n="prn"/><s n="pers"/><s n="sg"/></l> <r>han<s n="prn"/><s n="pers"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
+<e><p><l>hann<s n="prn"/><s n="pers"/><s n="sg"/><s n="gen"/></l> <r>hans<s n="det"/><s n="pos"/><s n="ut"/><s n="sg"/></r></p></e>
+<e><p><l>hon<s n="prn"/><s n="pers"/><s n="sg"/></l> <r>hun<s n="prn"/><s n="pers"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
 <e><p><l>hvør<s n="prn"/><s n="itg"/></l><r>hvad<s n="prn"/><s n="itg"/></r></p></e>
 <e><p><l>samur<s n="prn"/></l><r>samme<s n="prn"/></r></p></e>
 <e><p><l>seg<s n="prn"/><s n="ref"/></l><r>seg<s n="prn"/><s n="ref"/><s n="p3"/><s n="un"/><s n="sp"/></r></p></e>
@@ -169,7 +169,7 @@
 <e><p><l>tað<s n="prn"/><s n="pers"/><s n="pl"/></l> <r>de<s n="prn"/><s n="pers"/><s n="p3"/><s n="un"/><s n="pl"/></r></p></e>
 <e><p><l>tað<s n="prn"/><s n="pers"/><s n="sg"/></l> <r>den<s n="prn"/><s n="pers"/><s n="p3"/><s n="nt"/><s n="sg"/></r></p></e>
 <e><p><l>tey<s n="prn"/><s n="pl"/><s n="pers"/></l> <r>de<s n="prn"/><s n="pers"/><s n="p3"/><s n="pl"/></r></p></e>
-<e><p><l>tú<s n="prn"/><s n="pers"/><s n="sg"/></l><r>du<s n="prn"/><s n="pers"/><s n="p2"/><s n="n"/><s n="ut"/><s n="sg"/></r></p></e>
+<e><p><l>tú<s n="prn"/><s n="pers"/><s n="sg"/></l><r>du<s n="prn"/><s n="pers"/><s n="p2"/><s n="ut"/><s n="sg"/></r></p></e>
 <e><p><l>hesin<s n="prn"/><s n="dem"/></l><r>denne<s n="prn"/><s n="dem"/></r></p></e>
 <e><p><l>tann<s n="prn"/><s n="dem"/></l><r>den<s n="det"/><s n="dem"/></r></p></e>
 
@@ -827,8 +827,8 @@
 <e><p><l>liðiligur<s n="adj"/></l><r>fleksibel<s n="adj"/></r></p><par n="adj:adj"/></e>
 <e><p><l>liðiligur<s n="adj"/></l><r>væv<s n="adj"/></r></p><par n="adj:adj"/></e>
 <e><p><l>liðiligur<s n="adj"/></l><r>væver<s n="adj"/></r></p><par n="adj:adj"/></e>
-<e><p><l>liðugur<s n="adj"/></l><r>ferdig<s n="adj"/><s n="sint"/></r></p><par n="adj:adj"/></e>
-<e><p><l>liðugur<s n="adj"/></l><r>færdig<s n="adj"/></r></p><par n="adj:adj"/></e>
+<!--<e><p><l>liðugur<s n="adj"/></l><r>færdig<s n="adj"/></r></p><par n="adj:adj"/></e>-->
+<e><p><l>liðugur<s n="adj"/></l><r>færdig<s n="adj"/><s n="sint"/></r></p><par n="adj:adj"/></e>
 <e><p><l>ljósagrønur<s n="adj"/></l><r>lysegrøn<s n="adj"/></r></p><par n="adj:adj"/></e>
 <e><p><l>ljóshærdur<s n="adj"/></l><r>blond<s n="adj"/></r></p><par n="adj:adj"/></e>
 <e><p><l>ljósur<s n="adj"/></l><r>lys<s n="adj"/></r></p><par n="adj:adj"/></e>
@@ -11547,8 +11547,6 @@
 <e>       <p><l>upp<b/>till<s n="pr"/></l>             <r>op<b/>til<s n="pr"/></r></p></e>
 <e>       <p><l>upp<s n="pr"/></l><r>opp<s n="pr"/></r></p></e>
 <e>       <p><l>uppe<b/>i<s n="pr"/></l>               <r>oppe<b/>på<s n="pr"/></r></p></e>
-<e>       <p><l>uppá<s n="pr"/></l><r>opp<s n="pr"/></r></p></e>
-<e>       <p><l>uppá<s n="pr"/></l><r>oppå<s n="pr"/></r></p></e>
 <e>       <p><l>uppí<s n="pr"/></l><r>oppi<s n="pr"/></r></p></e>
 <e>       <p><l>ur<s n="pr"/></l>                      <r>ud<b/>af<s n="pr"/></r></p></e>
 <e>       <p><l>ut<s n="pr"/></l>                      <r>ud<s n="pr"/></r></p></e>
