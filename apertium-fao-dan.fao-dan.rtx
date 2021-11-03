@@ -45,6 +45,7 @@ det:   _.a_det.gender.number;
 vblex: _.tense.voice;
 vbser: _.tense.voice;
 vbmod: _.tense.voice;
+vbhaver: _.tense.voice;
 pr:    _;
 adv:   _.a_comp;
 ij:    _;
@@ -134,6 +135,7 @@ ADV -> "ADV" %adv { %1 }
 VP -> %vblex { %1 }
     | %vbser { %1 }
     | %vbmod { %1 }
+    | %vbhaver { %1 }
     ;
 
 
