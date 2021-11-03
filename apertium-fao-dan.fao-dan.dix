@@ -270,7 +270,8 @@
 <e><p><l>fyrra<s n="adv"/></l><r>forrige<s n="adv"/></r></p></e>
 <e><p><l>fyrrverandi<s n="adv"/></l><r>*forhenværende.<s n="adv"/></r></p></e>
 <e><p><l>fyrst<s n="adv"/></l><r>først<s n="adv"/></r></p></e>
-<e><p><l>gjár<s n="adv"/></l> <r>går<s n="adv"/></r></p></e>
+<e><p><l>í<b/>gjár<s n="adv"/></l> <r>i<b/>går<s n="adv"/></r></p></e>
+<e r="RL"><p><l>í<b/>gjár<s n="adv"/></l> <r>igår<s n="adv"/></r></p></e>
 <e><p><l>hagar<s n="adv"/></l><r>derover<s n="adv"/></r></p></e>
 <e><p><l>har<s n="adv"/></l> <r>der<s n="adv"/></r></p></e>
 <e><p><l>har<s n="adv"/></l><r>der<b/>hen<s n="adv"/></r></p></e>
@@ -12902,7 +12903,7 @@
 <e>       <p><l>leiða<s n="vblex"/></l><r>præsidere<s n="vblex"/></r></p></e>
 <e>       <p><l>leiða<s n="vblex"/></l><r>veje<s n="vblex"/></r></p></e>
 <e>       <p><l>leiðbeina<s n="vblex"/></l><r>instruere<s n="vblex"/></r></p></e>
-<e>       <p><l>leka<s n="vblex"/></l><r>læk<s n="vblex"/></r></p></e>
+<e>       <p><l>leka<s n="vblex"/></l><r>lege<s n="vblex"/></r></p></e>
 <e>       <p><l>lekja<s n="vblex"/></l><r>kurere<s n="vblex"/></r></p></e>
 <e>       <p><l>lemja<s n="vblex"/></l><r>lamme<s n="vblex"/></r></p></e>
 <e>       <p><l>lemja<s n="vblex"/></l><r>mørbanke<s n="vblex"/></r></p></e>
@@ -13839,7 +13840,7 @@
 <e>       <p><l>spáa<s n="vblex"/></l><r>spå<s n="vblex"/></r></p></e>
 <e>       <p><l>spáka<s n="vblex"/></l><r>flanere<s n="vblex"/></r></p></e>
 <e>       <p><l>spáka<s n="vblex"/></l><r>promenere<s n="vblex"/></r></p></e>
-<e>       <p><l>spæla<s n="vblex"/></l><r>læk<s n="vblex"/></r></p></e>
+<e>       <p><l>spæla<s n="vblex"/></l><r>lege<s n="vblex"/></r></p></e>
 <e>       <p><l>spæla<s n="vblex"/></l><r>medvirke<s n="vblex"/></r></p></e>
 <e>       <p><l>spæla<s n="vblex"/></l><r>optræde<s n="vblex"/></r></p></e>
 <e>       <p><l>spæla<s n="vblex"/></l><r>spille<s n="vblex"/></r></p></e>
