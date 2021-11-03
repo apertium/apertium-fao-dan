@@ -11,26 +11,37 @@ PREFIX2=$(LANG2)-$(LANG1)
 BASENAME=apertium-$(PREFIX1)
 
 TARGETS_COMMON = \
+	$(TARGETS1) \
+	$(TARGETS2)
+
+TARGETS1= \
 	$(PREFIX1).automorf.hfst \
 	$(PREFIX1).rlx.bin \
 	$(PREFIX1).autobil.bin \
-		$(PREFIX1).autolex.bin \
+	$(PREFIX1).autolex.bin \
 	$(PREFIX1).autogen.bin \
 	$(PREFIX1).t1x.bin \
 	$(PREFIX1).t2x.bin \
 	$(PREFIX1).t3x.bin \
-	$(PREFIX1).rtx.bin \
+	$(PREFIX1).rtx.bin
+
+TARGETS2 = \
 	$(PREFIX2).automorf.bin \
 	$(PREFIX2).prob \
 	$(PREFIX2).rlx.bin \
 	$(PREFIX2).autobil.bin \
-		$(PREFIX2).autolex.bin \
+	$(PREFIX2).autolex.bin \
 	$(PREFIX2).autogen.hfst \
 	$(PREFIX2).t1x.bin \
 	$(PREFIX2).t2x.bin \
 	$(PREFIX2).t3x.bin
 
+# Some debug goals:
 debug: $(PREFIX1).automorf-untrimmed.hfst
+#$(PREFIX2).automorf-untrimmed.hfst
+# for quickly compiling one direction – with minimal typing!
+f: $(TARGETS1)
+d: $(TARGETS2)
 
 # This include defines goals for install-modes, .deps/.d and .mode files:
 @ap_include@
