@@ -5,9 +5,7 @@
 !!!!!!!!!!!!!!!!!!!!!!!!!
 
 gender = m f nt ut un fn mf GD ;
-! TODO do I need non_overwritable_gender = … @mf ;
-gender_adj_sg_ind = nt ut ;
-gender_adj = (GD ut) nt ut un GD ;
+gender_adj = (GD ut) nt ut un GD ; ! constrained to possible dan adj genders
 number = sg pl sp ND ;
 defnes = def ind ;
 tense = inf pret pres pp supn imp ;
@@ -54,12 +52,13 @@ cnjsub: _.a_clb;
 cnjcoo: _.a_clb;
 part:   _;
 
+! Turn fao prn's into determiners etc. with only the tags we want:
 prn_withpers:  _.a_prn.person.gender.number.case_danprn;
 prn_nopers:    _.a_prn.gender.number.case_danprn;
 prn_detpos:    _.a_det.gender.number;
 prn: (if (1.a_det = pos)        ! don't output gen-tag on det.pos
          1(prn_detpos)
-      elif (1.a_prn = pers or 1.a_prn = ref)
+      elif (1.a_prn = pers or 1.a_prn = ref) ! these are the only dan prns with p1/2/3 tags:
          1(prn_withpers)
       else
          1(prn_nopers)
@@ -76,7 +75,6 @@ VP:    _.tense.number.voice;
 ADV:   _;
 CNJ:   _;
 PRN:   _;
-! TODO: Put gender/number on VP for pp-samsvar stuff?
 
 
 !!!!!!!!!!!!!!!!!!!!
@@ -88,25 +86,11 @@ N -> %n         { %1[lemcase=$lemcase] }
    | n.*.cmp %N { 1[lemcase=$lemcase] %2 }
    ;
 
-! A gender:
-! - if pst and ND/GD: pl/un
-! - if sup and GD: fn
-! A N gender:
-! - if NOT adj.un and adj.GD OR n.gen/sl != n.gen/tl:
-!   - if sg and ind and n.lemh!=första and n.ut/n.nt: adj.gen=n.gen
-!   - if sg/sp and def/första:
-!     - if n.ut and noun-use-masc-adj: adj.gen=m
-!     - if n.nt: adj.gen=fn
-
 A -> "A->adj"       %adj { %1[gender=(if (1.a_comp = pst and 1.gender = GD) un el-if (1.a_comp = sup and 1.gender = GD) fn else $gender_adj),
                               number=(if (1.a_comp = pst and 1.number = ND) pl else $number)] }
    | "A->n+A" n.*.cmp %A { 1 %2 }
    ;
 
-! TODO: Stop <sint> getting copied from sl side if not in tl side!
-! <popcorndude> if you specify a side it takes that side or empty, if you don't specify a side it tries tl->ref->sl  [15:41]
-! ^nøye<adj><sint><pst><nt><sg><ind>/noga<adj><pst><nt><sg><ind>$
-! should not get sint!
 
 NP ->   %N { %1[lemcase=$lemcase] }
     | A.*.pl.*.def %N { 1[gender=un, number=sp] _ %2 }
@@ -129,7 +113,6 @@ DP -> "det NP" det %NP
       }
       ;
 
-! TODO: Do any tags need propagating here?
 ADV -> "ADV" %adv { %1 }
     | "ADV.nt" %A.*.nt { %1 }
     ;
