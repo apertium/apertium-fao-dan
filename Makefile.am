@@ -222,11 +222,11 @@ clean-local:
 ###############################################################################
 
 test: all
-	echo "house" | apertium -d . fao-dan | tee .test-mt
-	@echo "house" > .test-ref
-	@diff .test-ref .test-mt
-	echo "house" | apertium -d . dan-fao | tee .test-mt
-	@echo "house" > .test-ref
+	echo "gentan hansara" | apertium -d . rfao-dan | tee .test-mt
+	@echo "hans pige" > .test-ref
 	@diff .test-ref .test-mt
 	@rm .test-ref .test-mt
 
+# echo "hans pige" | apertium -d . dan-fao | tee .test-mt
+# @echo "gentan hansara" > .test-ref
+# @diff .test-ref .test-mt
