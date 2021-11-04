@@ -94,7 +94,7 @@
         <file name="dan-fao.t3x.bin"/>
       </program>
       <program name="lt-proc $1">
-        <file name="dan-fao.autogen.bin"/>
+        <file name="dan-fao.autogen.hfst"/>
       </program>
     </pipeline>
   </mode>
