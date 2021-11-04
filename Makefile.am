@@ -2,7 +2,6 @@
 ## Makefile for Faroese--Danish
 ###############################################################################
 
-VERSION=0.1.0
 LANG1=fao
 LANG2=dan
 PREFIX1=$(LANG1)-$(LANG2)
@@ -208,6 +207,7 @@ apertium_fao_dan_DATA= \
 noinst_DATA=modes/$(PREFIX1).mode
 
 install-data-local: install-modes
+uninstall-local: uninstall-modes
 
 ###############################################################################
 ## Cleanup
@@ -222,10 +222,7 @@ clean-local:
 ###############################################################################
 
 test: all
-	echo "gentan hansara" | apertium -d . rfao-dan | tee .test-mt
-	@echo "hans pige" > .test-ref
-	@diff .test-ref .test-mt
-	@rm .test-ref .test-mt
+	apertium-regtest test
 
 # echo "hans pige" | apertium -d . dan-fao | tee .test-mt
 # @echo "gentan hansara" > .test-ref

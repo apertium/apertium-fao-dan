@@ -1,0 +1,9 @@
+{
+  "fao-dan": {
+    "input": "fao-dan-input.txt",
+    "mode": "rfao-dan"
+  },
+  "settings": {
+    "structure": "nested"
+  }
+}
