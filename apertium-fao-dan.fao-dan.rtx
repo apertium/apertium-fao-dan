@@ -1,4 +1,4 @@
-! fao-dan.rtx
+ fao-dan.rtx
 
 !!!!!!!!!!!!!!!!!!!!!!!!!
 ! Attribute Categories: !
@@ -33,6 +33,7 @@ w_tann = tann ;                 ! det
 
 tense > tense : pret past ;
 
+
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ! Tag Order (Output Patterns): !
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -63,6 +64,10 @@ prn: (if (1.a_det = pos)        ! don't output gen-tag on det.pos
       else
          1(prn_nopers)
      );
+! Fungerer ikkje: mamma teirra - deres mamma
+! fao: tann+Det+Fem+Pl+Gen
+! vi får: ^Den<det><dem><ut><sg><gen>
+! vi vil ha: <det><pos><ut><sg>
 
 
 ! Note: attrs not included here are not available to reduction rules
