@@ -1,4 +1,4 @@
- fao-dan.rtx
+!fao-dan.rtx
 
 !!!!!!!!!!!!!!!!!!!!!!!!!
 ! Attribute Categories: !
@@ -32,16 +32,16 @@ w_tann = tann ;                 ! det
 !!!!!!!!!!!!!!!!!!!!!!
 
 tense > tense : pret past ;
-
+a_det > a_det : dem pos ;
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ! Tag Order (Output Patterns): !
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
+det:   _.a_det.gender.number;
 adj:   _.a_adj.a_comp.gender.number.defnes.a_cmp;
 np:    _.a_prop.gender.a_cmp;
 n:     _.gender.number.defnes.a_cmp;
-det:   _.a_det.gender.number;
 vblex: _.tense.voice;
 vbser: _.tense.voice;
 vbmod: _.tense.voice;
@@ -102,6 +102,7 @@ NP ->   %N { %1[lemcase=$lemcase] }
     | A.*.pst.*.sg.*.def %N { 1[gender=un, number=sp] _ %2 }
     | A %N { 1[gender=(if (2.number = pl) un else 2.gender), number=2.number] _ %2 }
     | %prn { %1 }
+    | %det { %1 }
     ;
 
 PP -> pr %DP { 1 _ 2 } ;
