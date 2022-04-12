@@ -164,7 +164,7 @@
 <e><p><l>hon<s n="prn"/><s n="pers"/><s n="sg"/></l> <r>hun<s n="prn"/><s n="pers"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
 <e><p><l>hvør<s n="prn"/><s n="itg"/></l><r>hvad<s n="prn"/><s n="itg"/></r></p></e>
 <e><p><l>samur<s n="prn"/></l><r>samme<s n="prn"/></r></p></e>
-<e><p><l>seg<s n="prn"/><s n="ref"/></l><r>seg<s n="prn"/><s n="ref"/><s n="p3"/><s n="un"/><s n="sp"/></r></p></e>
+<e><p><l>seg<s n="prn"/><s n="ref"/></l><r>sig<s n="prn"/><s n="ref"/><s n="p3"/><s n="un"/><s n="sp"/></r></p></e>
 <e><p><l>tað<s n="prn"/><s n="dem"/></l><r>den<s n="det"/><s n="dem"/></r></p></e>
 <e><p><l>tað<s n="prn"/><s n="pers"/><s n="pl"/></l> <r>de<s n="prn"/><s n="pers"/><s n="p3"/><s n="un"/><s n="pl"/></r></p></e>
 <e><p><l>tað<s n="prn"/><s n="pers"/><s n="sg"/></l> <r>den<s n="prn"/><s n="pers"/><s n="p3"/><s n="nt"/><s n="sg"/></r></p></e>
@@ -189,7 +189,7 @@
 <e><p><l>samur<s n="adj"/></l><r>samme<s n="det"/><s n="dem"/></r></p></e>
 <e><p><l>sín<s n="det"/></l><r>sin<s n="det"/></r></p></e>
 <e><p><l>summur<s n="det"/></l><r>viss<s n="det"/><s n="qnt"/></r></p></e>
-<e><p><l>tann<s n="det"/></l><r>den<s n="det"/><s n="dem"/></r></p></e>
+<e><p><l>tann<s n="det"/><s n="dem"/></l><r>den<s n="det"/><s n="dem"/></r></p></e>
 <e><p><l>tað<s n="det"/><s n="pl"/></l><r>de<s n="det"/><s n="dem"/><s n="pl"/></r></p></e>
 <e><p><l>tað<s n="det"/><s n="sg"/></l><r>den<s n="det"/><s n="dem"/><s n="sg"/></r></p></e>
 
@@ -219,7 +219,7 @@
 <e><p><l>túsund<s n="num"/></l><r>tusen<s n="det"/><s n="qnt"/><s n="un"/><s n="pl"/></r></p></e>
 
 <!-- SECTION: Adverbs -->
-
+<e><p><l>skjótt<s n="adv"/></l><r>hurtigt<s n="adv"/></r></p></e>
 <e><p><l>aftanfyri<s n="adv"/></l><r>bag<s n="adv"/></r></p></e>
 <e><p><l>aftaná<s n="adv"/></l><r>herpå<s n="adv"/></r></p></e>
 <e><p><l>aftur<s n="adv"/></l> <r>tilbage<s n="adv"/></r></p></e>
@@ -463,7 +463,6 @@
 <e><p><l>varisligani<s n="adv"/></l><r>varsom<s n="adj"/><s n="sint"/><s n="pst"/><s n="nt"/><s n="sg"/><s n="ind"/></r></p></e>
 <e><p><l>vestanfyri<s n="adv"/></l><r>vestfor<s n="adv"/></r></p></e>
 <e><p><l>væl<s n="adv"/></l> <r>godt<s n="adv"/></r></p></e>
-<e><p><l>væl<s n="adv"/></l><r>god<s n="adv"/></r></p></e>
 <e><p><l>yvirhøvur<s n="adv"/></l><r>overhovedet.<s n="adv"/></r></p></e>
 <e><p><l>áðrenn<s n="adv"/></l> <r>før<s n="adv"/></r></p></e>
 <e><p><l>áðrenn<s n="adv"/></l><r>før<s n="adv"/></r></p></e>
@@ -12087,7 +12086,6 @@
 <e>       <p><l>filosofera<s n="vblex"/></l><r>filosofere<s n="vblex"/></r></p></e>
 <e>       <p><l>fimmfalda<s n="vblex"/></l><r>femdoble<s n="vblex"/></r></p></e>
 <e>       <p><l>finna<s n="vblex"/></l><r>finde<s n="vblex"/></r></p></e>
-<e>       <p><l>finna<s n="vblex"/></l><r>finne<s n="vblex"/></r></p></e>
 <e>       <p><l>firra<s n="vblex"/></l><r>fremmedgøre<s n="vblex"/></r></p></e>
 <e>       <p><l>fiska<s n="vblex"/></l><r>fiskeri<s n="vblex"/></r></p></e>
 <e>       <p><l>fita<s n="vblex"/></l><r>fedte<s n="vblex"/></r></p></e>
