@@ -71,6 +71,7 @@ prn: (if (1.a_det = pos)        ! don't output gen-tag on det.pos
      );
 ! Fungerer ikkje: mamma teirra - deres mamma
 ! fao: tann+Det+Fem+Pl+Gen
+! tann<prn><dem><f><pl><gen>
 ! vi får: ^Den<det><dem><ut><sg><gen>
 ! vi vil ha: <det><pos><ut><sg>
 
