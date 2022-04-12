@@ -1,5 +1,7 @@
 !fao-dan.rtx
 
+! Documentation: https://wiki.apertium.org/wiki/Apertium-recursive
+
 !!!!!!!!!!!!!!!!!!!!!!!!!
 ! Attribute Categories: !
 !!!!!!!!!!!!!!!!!!!!!!!!!
@@ -20,6 +22,9 @@ a_prop = ant cog top org al ;
 a_clb  = clb ;
 a_prn  = def dem ind itg pers pos ref rel res ;
 case_danprn = gen nom acc ;
+
+dempron = "prn dem" ;
+dem = dem ;
 
 ! Word sets:
 w_tu = tú ;                     ! pers.p2
@@ -103,13 +108,16 @@ NP ->   %N { %1[lemcase=$lemcase] }
     | A %N { 1[gender=(if (2.number = pl) un else 2.gender), number=2.number] _ %2 }
     | %prn { %1 }
     | %det { %1 }
+    | %dem { %1 }
     ;
 
 PP -> pr %DP { 1 _ 2 } ;
 
 DP -> "det NP" det %NP
       { 1[gender=(if (2.number = pl) un else 2.gender), number=2.number] _ 2 }
-    | "prn NP" prn %NP
+!    | "dempron NP" prn %NP
+    | "prn NP" prn %NP    
+    | "det NP" det %NP
       { 1[gender=(if (2.number = pl) un else 2.gender), number=2.number] _ 2 }
     | "n.def prn.gen ~> det.pos n.ind"
       %NP prn.*.gen
@@ -118,6 +126,9 @@ DP -> "det NP" det %NP
         1[defnes=ind, lemcase=2.lemcase]
       }
       ;
+! tú<prn><pers><sg><nom>
+! du<prn><pers><p2><ut><sg><nom>
+
 
 ADV -> "ADV" %adv { %1 }
     | "ADV.nt" %A.*.nt { %1 }
