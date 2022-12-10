@@ -75,6 +75,14 @@ prn: (if (1.a_det = pos)        ! don't output gen-tag on det.pos
 ! vi får: ^Den<det><dem><ut><sg><gen>
 ! vi vil ha: <det><pos><ut><sg>
 
+! e teirra|hfst-lookup fao-dan.automorf.hfst |cut -f1,2
+! > > teirra	tann<det><dem><f><pl><gen>
+! teirra	tann<det><dem><m><pl><gen>
+! teirra	tann<prn><dem><f><pl><gen>
+! teirra	tann<prn><dem><m><pl><gen>
+! teirra	tað<prn><dem><nt><pl><gen>
+! teirra	tað<prn><pers><pl><gen>
+
 
 ! Note: attrs not included here are not available to reduction rules
 N:     _.gender.number.defnes.a_cmp;
