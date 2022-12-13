@@ -1,2 +1,8 @@
 [1ovW7Sfu3fa5#0] ^hans<det><pos><ut><sg>$ ^pige<n><ut><sg><ind>$
 [/1ovW7Sfu3fa5]
+[PZhe-z4D9MrG#0] ^Jákup<np><ant><un>$ ^og<cnjcoo>$ ^Maria<np><ant><un>$ ^være<vbser><pres><actv>$ ^i<pr>$ ^have<n><ut><sg><def>$^.<sent>$
+[/PZhe-z4D9MrG]
+[WyTlP36Qjg03#0] ^Hun<prn><pers><p3><f><sg><nom>$ ^se<vblex><pres><actv>$ ^ud<adv>$ ^gennem<pr>$ ^vindue<n><nt><sg><def>$ ^og<cnjcoo>$ ^se<vblex><pres><actv>$ ^Jákup<np><ant><m>$ ^og<cnjcoo>$ ^Maria<np><ant><f>$ ^lege<vblex><pres><actv>$^.<sent>$
+[/WyTlP36Qjg03]
+[xVQ5yyZ5Li2A#0] ^Den<det><dem><ut><sg><gen>$ ^mamma<n><ut><sg><ind>$ ^være<vbser><pres><actv>$ ^inde<adv>$ ^i<pr>$ ^hus<n><nt><pl><def>$ ^ved<pr>$ ^kat<n><ut><sg><def>$^.<sent>$
+[/xVQ5yyZ5Li2A]

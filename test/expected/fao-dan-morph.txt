@@ -1,2 +1,8 @@
 [1ovW7Sfu3fa5#0] ^gentan/genta<n><f><sg><nom><def>$ ^hansara/hann<prn><pers><sg><gen>$
 [/1ovW7Sfu3fa5]
+[PZhe-z4D9MrG#0] ^Jákup/Jákup<np><ant><m><sg><acc>/Jákup<np><ant><m><sg><nom>$ ^og/og<cnjcoo>$ ^Maria/Maria<np><ant><f><sg><nom>$ ^eru/vera<vblex><ind><pres><pl>$ ^í/í<pr>$ ^havanum/havi<n><m><sg><dat><def>$^./.<sent>$
+[/PZhe-z4D9MrG]
+[WyTlP36Qjg03#0] ^Hon/hon<prn><pers><sg><nom>$ ^hyggur/hyggja<vblex><ind><pres><p2><sg>/hyggja<vblex><ind><pres><p3><sg>$ ^út/út<adv>$ ^gjøgnum/gjøgnum<pr>$ ^vindeygað/vindeyga<n><nt><sg><acc><def>/vindeyga<n><nt><sg><nom><def>/vindur<n><m><sg><acc><cmp>+eyga<n><nt><sg><acc><def>/vindur<n><m><sg><acc><cmp>+eyga<n><nt><sg><nom><def>$ ^og/og<cnjcoo>$ ^sær/seg<prn><ref><dat>/særa<vblex><imp><sg>/síggja<vblex><ind><pres><p2><sg>/síggja<vblex><ind><pres><p3><sg>$ ^Jákup/Jákup<np><ant><m><sg><acc>/Jákup<np><ant><m><sg><nom>$ ^og/og<cnjcoo>$ ^Mariu/Maria<np><ant><f><sg><acc>/Maria<np><ant><f><sg><dat>/Maria<np><ant><f><sg><gen>$ ^spæla/spæla<vblex><ind><pres><pl>/spæla<vblex><inf>/spæl<n><nt><pl><gen><ind>$^./.<sent>$
+[/WyTlP36Qjg03]
+[xVQ5yyZ5Li2A#0] ^Mamma/mamma<n><f><pl><gen><ind>/mamma<n><f><sg><nom><ind>$ ^teirra/tann<det><dem><f><pl><gen>/tann<det><dem><m><pl><gen>/tann<prn><dem><f><pl><gen>/tann<prn><dem><m><pl><gen>/tað<prn><dem><nt><pl><gen>/tað<prn><pers><pl><gen>$ ^er/vera<vblex><ind><pres><p3><sg>$ ^inni/inna<vblex><ind><pres><p1><sg>/inna<vblex><subj><pres><p3><sg>/inni<adv>$ ^í/í<pr>$ ^húsunum/hús<n><nt><pl><dat><def>$ ^við/við<pr>$ ^kettuni/ketta<n><f><sg><dat><def>$^./.<sent>$
+[/xVQ5yyZ5Li2A]

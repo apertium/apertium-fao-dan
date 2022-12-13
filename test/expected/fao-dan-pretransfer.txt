@@ -1,2 +1,8 @@
 [1ovW7Sfu3fa5#0] ^genta<n><f><sg><nom><def>$ ^hann<prn><pers><sg><gen>$
 [/1ovW7Sfu3fa5]
+[PZhe-z4D9MrG#0] ^Jákup<np><ant><m><sg><nom>$ ^og<cnjcoo><@CVP>$ ^Maria<np><ant><f><sg><nom>$ ^vera<vblex><ind><pres><pl>$ ^í<pr>$ ^havi<n><m><sg><dat><def>$^.<sent>$
+[/PZhe-z4D9MrG]
+[WyTlP36Qjg03#0] ^Hon<prn><pers><sg><nom>$ ^hyggja<vblex><ind><pres><p3><sg>$ ^út<adv>$ ^gjøgnum<pr>$ ^vindeyga<n><nt><sg><acc><def>$ ^og<cnjcoo><@CVP>$ ^síggja<vblex><ind><pres><p3><sg>$ ^Jákup<np><ant><m><sg><acc>$ ^og<cnjcoo><@CVP>$ ^Maria<np><ant><f><sg><acc>$ ^spæla<vblex><ind><pres><pl>$^.<sent>$
+[/WyTlP36Qjg03]
+[xVQ5yyZ5Li2A#0] ^Mamma<n><f><sg><nom><ind>$ ^tann<prn><dem><f><pl><gen>$ ^vera<vblex><ind><pres><p3><sg>$ ^inni<adv>$ ^í<pr>$ ^hús<n><nt><pl><dat><def>$ ^við<pr>$ ^ketta<n><f><sg><dat><def>$^.<sent>$
+[/xVQ5yyZ5Li2A]
