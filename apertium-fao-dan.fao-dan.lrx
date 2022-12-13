@@ -26,6 +26,12 @@
     <match lemma="á"/>
   </rule>
 
+  <rule>
+    <match lemma="tann" tags="det.dem.pl.*">
+    <select lemma="deres" tags="det.dem.*.pl.*"/>
+    </match>
+  </rule>
+
 <!--
 Resources:
     https://wiki.apertium.org/wiki/How_to_get_started_with_lexical_selection_rules
