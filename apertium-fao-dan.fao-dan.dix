@@ -190,8 +190,11 @@
 <e><p><l>sín<s n="det"/></l><r>sin<s n="det"/></r></p></e>
 <e><p><l>summur<s n="det"/></l><r>viss<s n="det"/><s n="qnt"/></r></p></e>
 <e><p><l>tann<s n="det"/><s n="dem"/></l><r>den<s n="det"/><s n="dem"/></r></p></e>
+<e><p><l>tann<s n="det"/><s n="dem"/><s n="pl"/></l><r>deres<s n="det"/><s n="dem"/><s n="pl"/></r></p></e>
 <e><p><l>tað<s n="det"/><s n="pl"/></l><r>de<s n="det"/><s n="dem"/><s n="pl"/></r></p></e>
 <e><p><l>tað<s n="det"/><s n="sg"/></l><r>den<s n="det"/><s n="dem"/><s n="sg"/></r></p></e>
+<!--<e><p><l>tað<s n="det"/><s n="pl"/><s n="gen"/></l><r>deres<s n="det"/><s n="pos"/><s n="un"/><s n="pl"/></r></p></e>-->
+
 
 <!-- SECTION: Numerals -->
 
