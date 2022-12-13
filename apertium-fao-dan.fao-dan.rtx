@@ -8,6 +8,7 @@
 
 gender = m f nt ut un fn mf GD ;
 gender_adj = (GD ut) nt ut un GD ; ! constrained to possible dan adj genders
+gender_prop = m f n ;
 number = sg pl sp ND ;
 defnes = def ind ;
 tense = inf pret pres pp supn imp ;
@@ -23,8 +24,7 @@ a_clb  = clb ;
 a_prn  = def dem ind itg pers pos ref rel res ;
 case_danprn = gen nom acc ;
 
-dempron = "prn dem" ;
-dem = dem ;
+!dempron = "prn dem" ;
 
 ! Word sets:
 w_tu = tú ;                     ! pers.p2
@@ -38,6 +38,7 @@ w_tann = tann ;                 ! det
 
 tense > tense : pret past ;
 a_det > a_det : dem pos ;
+gender > gender : m un , f un ;
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ! Tag Order (Output Patterns): !
@@ -45,7 +46,7 @@ a_det > a_det : dem pos ;
 
 det:   _.a_det.gender.number;
 adj:   _.a_adj.a_comp.gender.number.defnes.a_cmp;
-np:    _.a_prop.gender.a_cmp;
+np:    _.a_prop.prop_gender.a_cmp;
 n:     _.gender.number.defnes.a_cmp;
 vblex: _.tense.voice;
 vbser: _.tense.voice;
@@ -96,12 +97,13 @@ CNJ:   _;
 PRN:   _;
 
 
+
 !!!!!!!!!!!!!!!!!!!!
 ! Reduction Rules: !
 !!!!!!!!!!!!!!!!!!!!
 
 N -> %n         { %1[lemcase=$lemcase] }
-   | %np        { %1[lemcase=$lemcase] }
+   | %np        { %1[lemcase=$lemcase] }  ! <np><ant><m><sg><nom> / <np><ant><m>
    | n.*.cmp %N { 1[lemcase=$lemcase] %2 }
    ;
 
@@ -117,14 +119,17 @@ NP ->   %N { %1[lemcase=$lemcase] }
     | A %N { 1[gender=(if (2.number = pl) un else 2.gender), number=2.number] _ %2 }
     | %prn { %1 }
     | %det { %1 }
-    | %dem { %1 }
+    | %N prn.dem.$gender.$number { 2[gender=ut,number=pl] _ %1 }
     ;
+
+! mamma teirra/tað.det.dem.f.pl.gen -> deres/deres.det.pos.un.pl 
+!^deres/deres<det><pos><un><pl>
+
 
 PP -> pr %DP { 1 _ 2 } ;
 
 DP -> "det NP" det %NP
       { 1[gender=(if (2.number = pl) un else 2.gender), number=2.number] _ 2 }
-!    | "dempron NP" prn %NP
     | "prn NP" prn %NP    
     | "det NP" det %NP
       { 1[gender=(if (2.number = pl) un else 2.gender), number=2.number] _ 2 }
