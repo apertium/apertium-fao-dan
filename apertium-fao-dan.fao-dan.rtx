@@ -9,7 +9,7 @@
 gender = m f nt ut un fn mf GD ;
 gender_adj = (GD ut) nt ut un GD ; ! constrained to possible dan adj genders
 gender_prop = m f n ;
-gender_pers = m fn ;
+gender_pers = m f n ;
 number = sg pl sp ND ;
 defnes = def ind ;
 tense = inf pret pres pp supn imp ;
@@ -40,7 +40,7 @@ w_tann = tann ;                 ! det
 tense > tense : pret past ;
 a_det > a_det : dem pos ;
 gender > gender : m un , f un ;
-case_oers > case_pers : dat acc ;
+case_pers > case_pers : dat acc ;
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ! Tag Order (Output Patterns): !
