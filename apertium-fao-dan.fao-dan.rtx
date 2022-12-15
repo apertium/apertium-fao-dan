@@ -9,6 +9,7 @@
 gender = m f nt ut un fn mf GD ;
 gender_adj = (GD ut) nt ut un GD ; ! constrained to possible dan adj genders
 gender_prop = m f n ;
+gender_pers = m fn ;
 number = sg pl sp ND ;
 defnes = def ind ;
 tense = inf pret pres pp supn imp ;
@@ -39,6 +40,7 @@ w_tann = tann ;                 ! det
 tense > tense : pret past ;
 a_det > a_det : dem pos ;
 gender > gender : m un , f un ;
+case_oers > case_pers : dat acc ;
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ! Tag Order (Output Patterns): !
@@ -46,8 +48,9 @@ gender > gender : m un , f un ;
 
 det:   _.a_det.gender.number;
 adj:   _.a_adj.a_comp.gender.number.defnes.a_cmp;
-np:    _.a_prop.prop_gender.a_cmp;
+np:    _.a_prop.gender_prop;
 n:     _.gender.number.defnes.a_cmp;
+prn_pers: _.<pers>.person.gender_pers.number.case_pers ;
 vblex: _.tense.voice;
 vbser: _.tense.voice;
 vbmod: _.tense.voice;
@@ -58,6 +61,8 @@ ij:    _;
 cnjsub: _.a_clb;
 cnjcoo: _.a_clb;
 part:   _;
+sent:   _.a_clb;
+
 
 ! Turn fao prn's into determiners etc. with only the tags we want:
 prn_withpers:  _.a_prn.person.gender.number.case_danprn;
@@ -95,7 +100,8 @@ VP:    _.tense.number.voice;
 ADV:   _;
 CNJ:   _;
 PRN:   _;
-
+SENT: _ ;
+prn_pers: _ ;
 
 
 !!!!!!!!!!!!!!!!!!!!
@@ -112,6 +118,7 @@ A -> "A->adj"       %adj { %1[gender=(if (1.a_comp = pst and 1.gender = GD) un e
    | "A->n+A" n.*.cmp %A { 1 %2 }
    ;
 
+prn_pera -> %prn { 1 } ;
 
 NP ->   %N { %1[lemcase=$lemcase] }
     | A.*.pl.*.def %N { 1[gender=un, number=sp] _ %2 }
@@ -158,3 +165,6 @@ VP -> %vblex { %1 }
 CNJ -> %cnjcoo { %1 }
      | %cnjsub { %1 }
      ;
+     
+! If bidix removed clb, ensure it stays removed:
+SENT -> %sent { %1[a_clb = 1.a_clb/tl] } ;
