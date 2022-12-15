@@ -60,6 +60,34 @@
     </pipeline>
   </mode>
 
+<!--
+  <mode name="rfao-dan-tree" install="no">
+    <pipeline>
+      <program name="hfst-proc -w">
+        <file name="fao-dan.automorf.hfst"/>
+      </program>
+      <program name="cg-proc -w -1 -n">
+        <file name="fao-dan.rlx.bin"/>
+      </program>
+      <program name="apertium-pretransfer"/>
+      <program name="lt-proc -b">
+        <file name="fao-dan.autobil.bin"/>
+      </program>
+      <program name="lrx-proc">
+        <file name="fao-dan.autolex.bin"/>
+      </program>
+      <program name="rtx-proc">
+        <file name="fao-dan.rtx.bin"/>
+      </program>
+      <program name="lt-proc $1">
+        <file name="fao-dan.autogen.bin"/>
+      </program>
+      <program name="rtx-proc -1">
+        <file name="fao-dan.rtx.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+-->
 
   <!-- dan → fao -->
 
