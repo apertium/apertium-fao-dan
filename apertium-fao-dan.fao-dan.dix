@@ -167,6 +167,7 @@
 <e><p><l>seg<s n="prn"/><s n="ref"/></l><r>sig<s n="prn"/><s n="ref"/><s n="p3"/><s n="un"/><s n="sp"/></r></p></e>
 <e><p><l>tað<s n="prn"/><s n="dem"/></l><r>den<s n="det"/><s n="dem"/></r></p></e>
 <e><p><l>tað<s n="prn"/><s n="pers"/><s n="pl"/></l> <r>de<s n="prn"/><s n="pers"/><s n="p3"/><s n="un"/><s n="pl"/></r></p></e>
+<!-- #de<prn><pers><p3><pl><nom> -->
 <e><p><l>tað<s n="prn"/><s n="pers"/><s n="sg"/></l> <r>den<s n="prn"/><s n="pers"/><s n="p3"/><s n="nt"/><s n="sg"/></r></p></e>
 <e><p><l>tey<s n="prn"/><s n="pl"/><s n="pers"/></l> <r>de<s n="prn"/><s n="pers"/><s n="p3"/><s n="pl"/></r></p></e>
 <e><p><l>tú<s n="prn"/><s n="pers"/><s n="sg"/></l><r>du<s n="prn"/><s n="pers"/><s n="p2"/><s n="ut"/><s n="sg"/></r></p></e>
@@ -14525,7 +14526,7 @@
 
 <e>       <p><l>'<s n="apos"/></l><r>'<s n="apos"/></r></p></e>
 <e><re>,</re><p><l><s n="cm"/></l><r><s n="cm"/></r></p></e>
-<e><re>[.\?;:!·…]+</re><p><l><s n="sent"/></l><r><s n="sent"/></r></p></e>
+<e><re>[.\?;:!·…]+</re><p><l><s n="sent"/></l><r><s n="sent"/><s n="clb"/></r></p></e>
 <e><re>[0-9]+([.,][0-9]+)?</re><p><l><s n="det"/><s n="qnt"/></l><r><s n="det"/><s n="qnt"/></r></p></e>
 <e><re>[\(\[]</re><p><l><s n="lpar"/></l><r><s n="lpar"/></r></p></e>
 <e><re>[\)\]]</re><p><l><s n="rpar"/></l><r><s n="rpar"/></r></p></e>
