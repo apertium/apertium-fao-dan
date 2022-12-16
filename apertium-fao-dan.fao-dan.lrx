@@ -27,8 +27,8 @@
   </rule>
 
   <rule>
-    <match lemma="tann" tags="det.dem.pl.*">
-    <select lemma="deres" tags="det.dem.*.pl.*"/>
+    <match lemma="tann" tags="prn.dem.f.pl.gen">
+    <select lemma="deres" tags="det.pos.ut.sg"/>
     </match>
   </rule>
 
