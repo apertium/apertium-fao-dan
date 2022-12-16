@@ -8,8 +8,8 @@
 
 gender = m f nt ut un fn mf GD ;
 gender_adj = (GD ut) nt ut un GD ; ! constrained to possible dan adj genders
-gender_prop = m f nt un ;
-gender_pers = m f nt un ;
+gender3 = (GD ut) m f nt un ut GD ;
+gender_dem = (GD ut) m f nt un ut GD ;
 number = sg pl sp ND ;
 defnes = def ind ;
 tense = inf pret pres pp supn imp ;
@@ -41,17 +41,19 @@ tense > tense : pret past ;
 a_det > a_det : dem pos ;
 !gender > gender : m un , f un ;
 gender > gender : m ut , f ut ;
+gender_dem > gender_dem : m un , f un ;
 case_pers > case_pers : dat acc ;
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ! Tag Order (Output Patterns): !
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
+!<det><dem><f><pl><dat>
 det:   _.a_det.gender.number;
 adj:   _.a_adj.a_comp.gender.number.defnes.a_cmp;
-np:    _.a_prop.gender_prop;
+np:    _.a_prop.gender3;
 n:     _.gender.number.defnes.a_cmp;
-prn_pers: _.<pers>.person.gender_pers.number.case_pers ;
+prn_pers: _.<pers>.person.gender3.number.case_pers ;
 !     <prn><pers><p3><un><sg><nom>
 vblex: _.tense.voice;
 vbser: _.tense.voice;
@@ -122,17 +124,15 @@ A -> "A->adj"       %adj { %1[gender=(if (1.a_comp = pst and 1.gender = GD) un e
 
 prn_pers -> %prn { 1(prn_pers) } ;
 
-NP ->   %N { %1[lemcase=$lemcase] }
+NP -> %N { %1[lemcase=$lemcase] }
     | A.*.pl.*.def %N { 1[gender=un, number=sp] _ %2 }
     | A.*.pst.*.sg.*.def %N { 1[gender=un, number=sp] _ %2 }
     | A %N { 1[gender=(if (2.number = pl) un else 2.gender), number=2.number] _ %2 }
     | %prn { %1 }
     | %det { %1 }
-    | %N prn.dem.$gender.$number { 2[gender=ut,number=pl] _ %1 }
+!    | %N prn.dem.$gender.$number.<gen> { 2[gender=un, number=sg] _ 1 }
+    | det A %N { 1 _ 2 _ 3 }
     ;
-
-! mamma teirra/tað.det.dem.f.pl.gen -> deres/deres.det.pos.un.pl 
-!^deres/deres<det><pos><un><pl>
 
 
 PP -> pr %DP { 1 _ 2 } ;
@@ -142,11 +142,25 @@ DP -> "det NP" det %NP
     | "prn NP" prn %NP    
     | "det NP" det %NP
       { 1[gender=(if (2.number = pl) un else 2.gender), number=2.number] _ 2 }
+
+! mamma teirra/tað.prn.dem.f.pl.gen >>> deres/deres.det.pos.un.pl mor
+! Error msg: No rule specified: ^den<det><dem><ut><sg><gen>$
+! challenge for bidix to select "deres":
+!<e><p><l>tann<s n="prn"/><s n="dem"/></l><r>den<s n="det"/><s n="dem"/></r></p></e>
+!<e><p><l>tann<s n="prn"/><s n="dem"/><s n="gen"/></l><r>deres<s n="det"/><s n="pos"/></r></p></e>
+
     | "n.def prn.gen ~> det.pos n.ind"
       %NP prn.*.gen
-      { 2[gender=(if (1.number = pl) un else 1.gender), number=1.number, lemcase=1.lemcase]
+      { 2[gender=(if (1.number = pl) ut else 1.gender), number=1.number, lemcase=1.lemcase]
         _
         1[defnes=ind, lemcase=2.lemcase]
+
+! original:
+!    | "n.def prn.gen ~> det.pos n.ind"
+!      %NP prn.*.gen
+!      { 2[gender=(if (1.number = pl) un else 1.gender), number=1.number, lemcase=1.lemcase]
+!        _
+!        1[defnes=ind, lemcase=2.lemcase]
       }
       ;
 ! tú<prn><pers><sg><nom>
