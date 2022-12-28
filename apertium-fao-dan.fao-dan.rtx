@@ -13,6 +13,8 @@ gender_dem = (GD ut) m f nt un ut GD ;
 number = sg pl sp ND ;
 defnes = def ind ;
 tense = inf pret pres pp supn imp ;
+infinite = inf ;
+participle = prfptc pp ;
 person = (PD p3) p1 p2 p3 PD ;
 voice = (VD actv) pasv actv ;
 a_adj = sint ord pp pprs ;
@@ -37,6 +39,8 @@ w_tann = tann ;                 ! det
 ! Tag Rewrite Rules: !
 !!!!!!!!!!!!!!!!!!!!!!
 
+participle > participle : prfptc pp ;
+
 tense > tense : pret past ;
 a_det > a_det : dem pos ;
 !gender > gender : m un , f un ;
@@ -59,6 +63,8 @@ vblex: _.tense.voice;
 vbser: _.tense.voice;
 vbmod: _.tense.voice;
 vbhaver: _.tense.voice;
+vbinfinite: _.infinite ;
+vbpp: _.<pp> ;
 pr:    _;
 adv:   _.a_comp;
 ij:    _;
@@ -175,6 +181,8 @@ VP -> %vblex { %1 }
     | %vbser { %1 }
     | %vbmod { %1 }
     | %vbhaver { %1 }
+    | %vbinfinite { %1 }
+    | 2: %vblex.[participle] { %1(vbpp) }
     ;
 
 
