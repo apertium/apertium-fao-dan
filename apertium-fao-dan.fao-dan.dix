@@ -485,6 +485,7 @@
 
 <!-- SECTION: Adjectives -->
 
+<e><p><l>reyður<s n="adj"/></l><r>rød<s n="adj"/></r></p><par n="adj:adj"/></e>
 <e><p><l>afrikanskur<s n="adj"/></l><r>afrikansk<s n="adj"/></r></p><par n="adj:adj"/></e>
 <e><p><l>afturbregðiligur<s n="adj"/></l><r>arvelig<s n="adj"/></r></p><par n="adj:adj"/></e>
 <e><p><l>akademiskur<s n="adj"/></l><r>akademisk<s n="adj"/></r></p><par n="adj:adj"/></e>
@@ -1402,12 +1403,14 @@
 
      <!-- SECTION: Nouns -->
 
+<e><p><l>tala<s n="n"/><s n="f"/></l><r>tale<s n="n"/><s n="ut"/></r></p></e>
+<e><p><l>prosent<s n="n"/><s n="nt"/></l><r>procent<s n="n"/><s n="ut"/></r></p></e>
 <e><p><l>kunnleiki<s n="n"/><s n="m"/></l><r>kundskab<s n="n"/><s n="ut"/></r></p></e>
 <e><p><l>rættindi<s n="n"/><s n="nt"/></l><r>rettighed<s n="n"/><s n="ut"/></r></p></e>
 <e><p><l>allmannaværk<s n="n"/><s n="nt"/></l><r>socialvæsen<s n="n"/><s n="nt"/></r></p></e>
 <e><p><l>nærumhvørvi<s n="n"/><s n="nt"/></l><r>nærområd<s n="n"/><s n="nt"/></r></p></e>
 <e><p><l>norðurlandamál<s n="n"/><s n="m"/></l><r>nordiskt<b/>sprog<s n="n"/><s n="nt"/></r></p></e>
-<e><p><l>minnilutamál<s n="n"/><s n="nt"/></l><r>minoritetssprog<s n="n"/><s n="nt"/></r></p></e>
+<e><p><l>minnilutamál<s n="n"/><s n="nt"/></l><r>minoritetssprog<s n="nt"/><s n="nt"/></r></p></e>
 <e><p><l>kunngerð<s n="n"/><s n="f"/></l><r>kundgørelse<s n="n"/><s n="nt"/></r></p></e>
 <e><p><l>móðurmál<s n="n"/><s n="nt"/></l><r>modersmål<s n="n"/><s n="nt"/></r></p></e>
 <e><p><l>málpolititkkur<s n="n"/><s n="m"/></l><r>sprogpolitik<s n="n"/><s n="ut"/></r></p></e>
@@ -1512,6 +1515,7 @@
 <e><p><l>antibiotika<s n="n"/><s n="nt"/></l><r>antibiotikum<s n="n"/><s n="nt"/></r></p></e>
 <e><p><l>antihetja<s n="n"/><s n="f"/></l><r>antihelt<s n="n"/><s n="ut"/></r></p></e>
 <e><p><l>antikvarbókhandlari<s n="n"/><s n="m"/></l><r>antikvarboghandel<s n="n"/><s n="ut"/></r></p></e>
+<e><p><l>rættstavari<s n="n"/><s n="m"/></l><r>stavekontrol<s n="n"/><s n="ut"/></r></p></e>
 <e><p><l>antikvarur<s n="n"/><s n="m"/></l><r>antikvar<s n="n"/><s n="ut"/></r></p></e>
 <e><p><l>antisemittur<s n="n"/><s n="m"/></l><r>antisemit<s n="n"/><s n="ut"/></r></p></e>
 <e><p><l>apartheidpolitikkur<s n="n"/><s n="m"/></l><r>apartheidpolitik<s n="n"/><s n="ut"/></r></p></e>
@@ -2816,6 +2820,7 @@
 <e><p><l>gjalddagur<s n="n"/><s n="m"/></l><r>termin<s n="n"/><s n="ut"/></r></p></e>
 <e><p><l>gjaldfreist<s n="n"/><s n="f"/></l><r>kredit<s n="n"/><s n="ut"/></r></p></e>
 <e><p><l>gjalding<s n="n"/><s n="f"/></l><r>betaling<s n="n"/><s n="ut"/></r></p></e>
+<e><p><l>lønarútgjalding<s n="n"/><s n="f"/></l><r>lønsudbetaling<s n="n"/><s n="ut"/></r></p></e>
 <e><p><l>gjaldoyra<s n="n"/><s n="m"/></l><r>møntenhed<s n="n"/><s n="ut"/></r></p></e>
 <e><p><l>gjaldoyra<s n="n"/><s n="m"/></l><r>valuta<s n="n"/><s n="ut"/></r></p></e>
 <e><p><l>gjaldoyra<s n="n"/><s n="nt"/></l><r>betalingsmiddel<s n="n"/><s n="nt"/></r></p></e>
@@ -11865,7 +11870,7 @@
 <e>       <p><l>býta<s n="vblex"/></l><r>bløde<s n="vblex"/></r></p></e>
 <e>       <p><l>býta<s n="vblex"/></l><r>bytte<s n="vblex"/></r></p></e>
 <e>       <p><l>býta<s n="vblex"/></l><r>distribuere<s n="vblex"/></r></p></e>
-<e>       <p><l>býta<s n="vblex"/></l><r>dum<s n="vblex"/></r></p></e>
+<e>       <p><l>býttur<s n="adj"/></l><r>dum<s n="adj"/></r></p></e>
 <e>       <p><l>býta<s n="vblex"/></l><r>segmentere<s n="vblex"/></r></p></e>
 <e>       <p><l>býta<s n="vblex"/></l><r>skifte<s n="vblex"/></r></p></e>
 <e>       <p><l>dagbóka<s n="vblex"/></l><r>journalisere<s n="vblex"/></r></p></e>
