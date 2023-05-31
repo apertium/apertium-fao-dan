@@ -164,7 +164,8 @@
 <e><p><l>hon<s n="prn"/><s n="pers"/><s n="sg"/></l> <r>hun<s n="prn"/><s n="pers"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
 <e><p><l>hvør<s n="prn"/><s n="itg"/></l><r>hvad<s n="prn"/><s n="itg"/></r></p></e>
 <e><p><l>samur<s n="prn"/></l><r>samme<s n="prn"/></r></p></e>
-<e><p><l>seg<s n="prn"/><s n="ref"/></l><r>sig<s n="prn"/><s n="ref"/><s n="p3"/><s n="un"/><s n="sp"/></r></p></e>
+<!--<e><p><l>seg<s n="prn"/><s n="ref"/></l><r>sig<s n="prn"/><s n="ref"/><s n="p3"/><s n="un"/><s n="sp"/></r></p></e>-->
+<e><p><l>seg<s n="prn"/><s n="ref"/></l><r>sig<s n="prn"/><s n="ref"/></r></p></e>
 <e><p><l>tað<s n="prn"/><s n="dem"/></l><r>den<s n="det"/><s n="dem"/></r></p></e>
 <e><p><l>tað<s n="prn"/><s n="pers"/><s n="pl"/></l> <r>de<s n="prn"/><s n="pers"/><s n="p3"/><s n="un"/><s n="pl"/></r></p></e>
 <!-- #de<prn><pers><p3><pl><nom> -->
@@ -173,7 +174,9 @@
 <e><p><l>tú<s n="prn"/><s n="pers"/><s n="sg"/></l><r>du<s n="prn"/><s n="pers"/><s n="p2"/><s n="ut"/><s n="sg"/></r></p></e>
 <e><p><l>hesin<s n="prn"/><s n="dem"/></l><r>denne<s n="prn"/><s n="dem"/></r></p></e>
 <e><p><l>tann<s n="prn"/><s n="dem"/></l><r>den<s n="det"/><s n="dem"/></r></p></e>
-<e><p><l>tann<s n="prn"/><s n="dem"/><s n="gen"/></l><r>deres<s n="det"/><s n="pos"/></r></p></e>
+<e><p><l>tann<s n="prn"/><s n="dem"/><s n="m"/><s n="pl"/><s n="gen"/></l><r>deres<s n="det"/><s n="pos"/><s n="un"/><s n="pl"/></r></p></e>
+<e><p><l>tann<s n="prn"/><s n="dem"/><s n="f"/><s n="pl"/><s n="gen"/></l><r>deres<s n="det"/><s n="pos"/><s n="un"/><s n="pl"/></r></p></e>
+<e><p><l>tann<s n="prn"/><s n="dem"/><s n="nt"/><s n="pl"/><s n="gen"/></l><r>deres<s n="det"/><s n="pos"/><s n="un"/><s n="pl"/></r></p></e>
 
 <!-- SECTION: Determiners-->
 
@@ -1411,7 +1414,7 @@
 <e><p><l>nærumhvørvi<s n="n"/><s n="nt"/></l><r>nærområd<s n="n"/><s n="nt"/></r></p></e>
 <e><p><l>norðurlandamál<s n="n"/><s n="m"/></l><r>nordiskt<b/>sprog<s n="n"/><s n="nt"/></r></p></e>
 <e><p><l>minnilutamál<s n="n"/><s n="nt"/></l><r>minoritetssprog<s n="nt"/><s n="nt"/></r></p></e>
-<e><p><l>kunngerð<s n="n"/><s n="f"/></l><r>kundgørelse<s n="n"/><s n="nt"/></r></p></e>
+<e><p><l>kunngerð<s n="n"/><s n="f"/></l><r>kundgørelse<s n="n"/><s n="ut"/></r></p></e>
 <e><p><l>móðurmál<s n="n"/><s n="nt"/></l><r>modersmål<s n="n"/><s n="nt"/></r></p></e>
 <e><p><l>málpolititkkur<s n="n"/><s n="m"/></l><r>sprogpolitik<s n="n"/><s n="ut"/></r></p></e>
 <e><p><l>undirvisning<s n="n"/><s n="f"/></l><r>undervisning<s n="n"/><s n="ut"/></r></p></e>
@@ -1605,7 +1608,7 @@
 <e><p><l>avtøka<s n="n"/><s n="f"/></l><r>amputation<s n="n"/><s n="ut"/></r></p></e>
 <e><p><l>avtøka<s n="n"/><s n="f"/></l><r>fotografering<s n="n"/><s n="ut"/></r></p></e>
 <e><p><l>avveiting<s n="n"/><s n="f"/></l><r>dræning<s n="n"/><s n="ut"/></r></p></e>
-<e><p><l>avvik<s n="n"/><s n="nt"/></l><r>afvigelse<s n="n"/><s n="nt"/></r></p></e>
+<e><p><l>avvik<s n="n"/><s n="nt"/></l><r>afvigelse<s n="n"/><s n="ut"/></r></p></e>
 <e><p><l>aðal<s n="n"/><s n="m"/></l><r>adel<s n="n"/><s n="ut"/></r></p></e>
 <e><p><l>aðalevni<s n="n"/><s n="nt"/></l><r>tema<s n="n"/><s n="nt"/></r></p></e>
 <e><p><l>aðalfundur<s n="n"/><s n="m"/></l><r>generalforsamling<s n="n"/><s n="ut"/></r></p></e>
@@ -1920,7 +1923,7 @@
 <e><p><l>bygggrýn<s n="n"/><s n="nt"/></l><r>byggryn<s n="n"/><s n="nt"/></r></p></e>
 <e><p><l>byggifelag<s n="n"/><s n="nt"/></l><r>entreprenørfirma<s n="n"/><s n="nt"/></r></p></e>
 <e><p><l>byggifrøðingur<s n="n"/><s n="m"/></l><r>konstruktør<s n="n"/><s n="ut"/></r></p></e>
-<e><p><l>byggiloyvi<s n="n"/><s n="nt"/></l><r>byggetilladelse<s n="n"/><s n="nt"/></r></p></e>
+<e><p><l>byggiloyvi<s n="n"/><s n="nt"/></l><r>byggetilladelse<s n="n"/><s n="ut"/></r></p></e>
 <e><p><l>byggilán<s n="n"/><s n="nt"/></l><r>byggelån<s n="n"/><s n="nt"/></r></p></e>
 <e><p><l>bygging<s n="n"/><s n="f"/></l><r>Bygging<s n="n"/><s n="ut"/></r></p></e>
 <e><p><l>bygging<s n="n"/><s n="nt"/></l><r>byg<s n="n"/><s n="nt"/></r></p></e>
@@ -8967,7 +8970,7 @@
 <e><p><l>Juul<s n="np"/><s n="cog"/></l><r>Juul<s n="np"/><s n="cog"/></r></p></e>
 <e><p><l>Jytte<s n="np"/><s n="ant"/><s n="f"/></l><r>Jytte<s n="np"/><s n="ant"/><s n="ut"/></r></p></e>
 <e><p><l>Jyväskylä<s n="np"/><s n="top"/><s n="sg"/></l><r>Jyväskylä<s n="np"/><s n="top"/></r></p></e>
-<e><p><l>Jákup<s n="np"/><s n="ant"/><s n="m"/></l><r>Jákup<s n="np"/><s n="ant"/><s n="m"/></r></p></e>
+<e><p><l>Jákup<s n="np"/><s n="ant"/><s n="m"/></l><r>Jakob<s n="np"/><s n="ant"/><s n="m"/></r></p></e> <!-- for the story -->
 <e><p><l>Jákupsdóttir<s n="np"/><s n="ant"/><s n="f"/></l><r>Jákupsdóttir<s n="np"/><s n="ant"/><s n="ut"/></r></p></e>
 <e><p><l>Järpen<s n="np"/><s n="top"/><s n="sg"/></l><r>Järpen<s n="np"/><s n="top"/></r></p></e>
 <e><p><l>Jæger<s n="np"/><s n="cog"/></l><r>Jæger<s n="np"/><s n="cog"/></r></p></e>
@@ -9969,7 +9972,7 @@
 <e><p><l>Norðurafrika<s n="np"/></l><r>Nord-Afrika<s n="np"/><s n="top"/></r></p></e>
 <e><p><l>Norðuratlantshav<s n="np"/><s n="nt"/></l><r>Nordsjøen<s n="np"/><s n="top"/><s n="ut"/></r></p></e>
 <e><p><l>Norðurland<s n="np"/><s n="nt"/><s n="sg"/></l><r>Norden<s n="np"/><s n="top"/></r></p></e>
-<e><p><l>Norðurlond<s n="np"/><s n="nt"/><s n="pl"/></l><r>Norden<s n="np"/><s n="top"/></r></p></e>
+<e r="LR"><p><l>Norðurlond<s n="np"/><s n="nt"/><s n="pl"/></l><r>Norden<s n="np"/><s n="top"/></r></p></e>
 <e><p><l>Nossebro<s n="np"/><s n="top"/><s n="sg"/></l><r>Nossebro<s n="np"/><s n="top"/></r></p></e>
 <e><p><l>Notodden<s n="np"/><s n="top"/><s n="sg"/></l><r>Notodden<s n="np"/><s n="top"/><s n="ut"/></r></p></e>
 <e><p><l>Notre-Dame<s n="np"/><s n="top"/><s n="sg"/></l><r>Notre-Dame<s n="np"/><s n="top"/></r></p></e>
@@ -11580,7 +11583,7 @@
 <e>       <p><l>úr<s n="pr"/></l><r>ut<b/>av<s n="pr"/></r></p></e>
 
      <!-- SECTION: Verbs -->
-<e r="LR"><p><l>líta<s n="vblex"/></l><r>se<s n="vbser"/></r></p></e>
+<e r="LR"><p><l>líta<s n="vblex"/></l><r>se<s n="vblex"/></r></p></e>
 <e>       <p><l>abortera<s n="vblex"/></l><r>abortere<s n="vblex"/></r></p></e>
 <e>       <p><l>abstrahera<s n="vblex"/></l><r>abstrahere<s n="vblex"/></r></p></e>
 <e>       <p><l>adoptera<s n="vblex"/></l><r>adoptere<s n="vblex"/></r></p></e>
@@ -13002,7 +13005,6 @@
 <e>       <p><l>líka<s n="vblex"/></l><r>ligge<s n="vblex"/></r></p></e>
 <e>       <p><l>líkna<s n="vblex"/></l><r>ligne<s n="vblex"/></r></p></e>
 <e>       <p><l>líma<s n="vblex"/></l><r>klister<s n="vblex"/></r></p></e>
-<e>       <p><l>líta<s n="vblex"/></l><r>se<s n="vblex"/></r></p></e>
 <e>       <p><l>líva<s n="vblex"/></l><r>beskytte<s n="vblex"/></r></p></e>
 <e>       <p><l>líva<s n="vblex"/></l><r>fender<s n="vblex"/></r></p></e>
 <e>       <p><l>líva<s n="vblex"/></l><r>live<s n="vblex"/></r></p></e>

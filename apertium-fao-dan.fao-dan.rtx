@@ -6,15 +6,16 @@
 ! Attribute Categories: !
 !!!!!!!!!!!!!!!!!!!!!!!!!
 
-gender = m f nt ut un fn mf GD ;
-gender_adj = (GD ut) nt ut un GD ; ! constrained to possible dan adj genders
-gender3 = (GD ut) m f nt un ut GD ;
-gender_dem = (GD ut) m f nt un ut GD ;
+gender     =         m f nt ut un GD mf ; ! swe: m = store, fn = stora (femneu)
+gender_adj = (GD ut)     nt ut un GD ; ! possible dan adj genders
+gender3    = (GD ut) m f nt ut un GD ;
+gender_dem = (GD ut) m f nt ut un GD ;
+gender_prop = m f nt ;
 number = sg pl sp ND ;
 defnes = def ind ;
 tense = inf pret pres pp supn imp ;
 infinite = inf ;
-participle = prfptc pp ;
+participle = prfptc pp supn ;
 person = (PD p3) p1 p2 p3 PD ;
 voice = (VD actv) pasv actv ;
 a_adj = sint ord pp pprs ;
@@ -25,7 +26,8 @@ a_comp = pst comp sup ;
 a_prop = ant cog top org al ;
 a_clb  = clb ;
 a_prn  = def dem ind itg pers pos ref rel res ;
-case_pers = gen nom acc ;
+case_pers = gen nom acc dat ;
+case = nom gen acc dat ;
 
 !dempron = "prn dem" ;
 
@@ -35,35 +37,26 @@ w_eg = eg ;                     ! pers.p1
 w_tann = tann ;                 ! det
 
 
-!!!!!!!!!!!!!!!!!!!!!!
-! Tag Rewrite Rules: !
-!!!!!!!!!!!!!!!!!!!!!!
-
-participle > participle : prfptc pp ;
-
-tense > tense : pret past ;
-a_det > a_det : dem pos ;
-!gender > gender : m un , f un ;
-gender > gender : m ut , f ut ;
-gender_dem > gender_dem : m un , f un ;
-case_pers > case_pers : dat acc ;
 
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ! Tag Order (Output Patterns): !
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
 !<det><dem><f><pl><dat>
+
 det:   _.a_det.gender.number;
+
+! If number = pl or defnes is def then <un>.<sp> otherwise inherit from sl
 adj:   _.a_adj.a_comp.gender.number.defnes.a_cmp;
-np:    _.a_prop.gender3;
+np:    _.a_prop.gender_prop.<gen>; ! this first since it is more specific?
+np:    _.a_prop.gender_prop;       ! default?
+!np:    _.a_prop.gender3; ! Trying without gender, as dan does not have it on names, but it has on some..
 n:     _.gender.number.defnes.a_cmp;
-prn_pers: _.<pers>.person.gender3.number.case_pers ;
-!     <prn><pers><p3><un><sg><nom>
+vbinfinite: _.infinite ;
 vblex: _.tense.voice;
 vbser: _.tense.voice;
 vbmod: _.tense.voice;
 vbhaver: _.tense.voice;
-vbinfinite: _.infinite ;
 vbpp: _.<pp> ;
 pr:    _;
 adv:   _.a_comp;
@@ -72,32 +65,26 @@ cnjsub: _.a_clb;
 cnjcoo: _.a_clb;
 part:   _;
 sent:   _.a_clb;
-Pron: _ ;
+Pron: _ ; ! ???
 
 ! Turn fao prn's into determiners etc. with only the tags we want:
+prn_pers: _.<pers>.person.gender3.number.case_pers ;
+prn_ref: _.<ref>.<p3>.<un>.<sp>.case_pers; ! sig<prn><ref><p3><un><sp><acc>
+!     <prn><pers><p3><un><sg><nom>
 prn_withpers:  _.a_prn.person.gender.number.case_pers;
 prn_nopers:    _.a_prn.gender.number.case_pers;
 prn_detpos:    _.a_det.gender.number;
+
 prn: (if (1.a_det = pos)        ! don't output gen-tag on det.pos
          1(prn_detpos)
-      elif (1.a_prn = pers or 1.a_prn = ref) ! these are the only dan prns with p1/2/3 tags:
-         1(prn_withpers)
+!      elif (1.a_prn = ref)
+!         1(prn_ref)
+!     elif (1.a_prn = pers or 1.a_prn = ref) ! these are the only dan prns with p1/2/3 tags:
+      elif (1.a_prn = pers) ! these are the only dan prns with p1/2/3 tags:
+         1(prn_pers)
       else
          1(prn_nopers)
      );
-! Fungerer ikkje: mamma teirra - deres mamma
-! fao: tann+Det+Fem+Pl+Gen
-! tann<prn><dem><f><pl><gen>
-! vi får: ^Den<det><dem><ut><sg><gen>
-! vi vil ha: <det><pos><ut><sg>
-
-! e teirra|hfst-lookup fao-dan.automorf.hfst |cut -f1,2
-! > > teirra	tann<det><dem><f><pl><gen>
-! teirra	tann<det><dem><m><pl><gen>
-! teirra	tann<prn><dem><f><pl><gen>
-! teirra	tann<prn><dem><m><pl><gen>
-! teirra	tað<prn><dem><nt><pl><gen>
-! teirra	tað<prn><pers><pl><gen>
 
 
 ! Note: attrs not included here are not available to reduction rules
@@ -113,6 +100,21 @@ PRN:   _;
 SENT: _ ;
 
 
+!!!!!!!!!!!!!!!!!!!!!!
+! Tag Rewrite Rules: !
+!!!!!!!!!!!!!!!!!!!!!!
+
+participle > participle : prfptc pp , supn pp;
+infinite > infinite : supn pp ;
+
+tense > tense : pret past ;
+!a_det > a_det : dem pos ; ! spurious
+!gender > gender : m un , f un ;
+gender > gender : m ut , f ut ;
+gender_dem > gender_dem : m un , f un ;
+case_pers > case_pers : dat acc ;
+
+
 
 !!!!!!!!!!!!!!!!!!!!
 ! Reduction Rules: !
@@ -123,38 +125,40 @@ N -> %n         { %1[lemcase=$lemcase] }
    | n.*.cmp %N { 1[lemcase=$lemcase] %2 }
    ;
 
-A -> "A->adj"       %adj { %1[gender=(if (1.a_comp = pst and 1.gender = GD) un el-if (1.a_comp = sup and 1.gender = GD) fn else $gender_adj),
-                              number=(if (1.a_comp = pst and 1.number = ND) pl else $number)] }
+! If number = pl or defnes is def then <un>.<sp> otherwise inherit from sl
+A -> "A->adj" %adj { %1[gender=(if (1.a_comp = pst and 1.gender = GD) un
+         el-if (1.a_comp = sup and 1.gender = GD) un else $gender_adj),
+	      number=(if (1.number = pl or 1.defnes = def) sp
+	 el-if (1.a_comp = pst and 1.number = ND) pl
+	 else $number)]
+	 }
    | "A->n+A" n.*.cmp %A { 1 %2 }
    ;
-
-prn_pers -> %prn { 1(prn_pers) } ;
 
 NP -> %N { %1[lemcase=$lemcase] }
     | A.*.pl.*.def %N { 1[gender=un, number=sp] _ %2 }
     | A.*.pst.*.sg.*.def %N { 1[gender=un, number=sp] _ %2 }
-    | A %N { 1[gender=(if (2.number = pl) un else 2.gender), number=2.number] _ %2 }
-    | %prn { %1 }
+    | 1: A %N { 1[gender=(if (2.number = pl) un else 2.gender), number=2.number] _ %2 }
+    | 0: %prn.?ref { %1 }
     | %det { %1 }
-!    | %N prn.dem.$gender.$number.<gen> { 2[gender=un, number=sg] _ 1 }
-    | det A %N { 1 _ 2 _ 3 }
+    | %np  { %1 }
+    | %N prn.dem.$gender.$number.<gen> { 2[gender=un, number=sg] _ 1 } !fff
+    | 3: det A %N.*.def { 1[gender=3.gender] _ 2[gender=un] _ 3 }
+    | 2: det A %N { 1[gender=3.gender] _ 2[gender=3.gender] _ 3 }
     ;
 
+prn_ref ->   3: %prn.<ref> { 1[a_prn=ref, person=p3, gender=un, number=sp, case=acc] } 
+           | 2: %prn.<pers> { 1 } 
+           | 1: %prn { 1 }
+           ;
 
 PP -> pr %DP { 1 _ 2 } ;
 
 DP -> "det NP" det %NP
       { 1[gender=(if (2.number = pl) un else 2.gender), number=2.number] _ 2 }
     | "prn NP" prn %NP    
-    | "det NP" det %NP
+!   | "det NP" det %NP
       { 1[gender=(if (2.number = pl) un else 2.gender), number=2.number] _ 2 }
-
-! mamma teirra/tað.prn.dem.f.pl.gen >>> deres/deres.det.pos.un.pl mor
-! Error msg: No rule specified: ^den<det><dem><ut><sg><gen>$
-! challenge for bidix to select "deres":
-!<e><p><l>tann<s n="prn"/><s n="dem"/></l><r>den<s n="det"/><s n="dem"/></r></p></e>
-!<e><p><l>tann<s n="prn"/><s n="dem"/><s n="gen"/></l><r>deres<s n="det"/><s n="pos"/></r></p></e>
-
     | "n.def prn.gen ~> det.pos n.ind"
       %NP prn.*.gen
       { 2[gender=(if (1.number = pl) ut else 1.gender), number=1.number, lemcase=1.lemcase]
