@@ -144,6 +144,7 @@ NP -> %N { %1[lemcase=$lemcase] }
     | %np  { %1 }
     | %N prn.dem.$gender.$number.<gen> { 2[gender=un, number=sg] _ 1 } !fff
     | 3: det A %N.*.def { 1[gender=3.gender] _ 2[gender=un] _ 3 }
+    | 3: det A , A %N.*.def { 1[gender=3.gender] _ 2[gender=un] _ 3 }
     | 2: det A %N { 1[gender=3.gender] _ 2[gender=3.gender] _ 3 }
     ;
 
